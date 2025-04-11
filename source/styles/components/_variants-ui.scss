@@ -1,0 +1,40 @@
+.options-selection__input-select-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.options-selection__input-select-label {
+  order: 0;
+}
+
+.options-selection__input-select-chevron {
+  order: 1;
+}
+
+.options-selection__input-select {
+  order: 2;
+}
+
+.options-selection__select-label {
+  display: block;
+  font-size: $size-normal;
+  font-weight: $label-weight;
+  color: $label-color;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+
+  // Sizes
+  &.is-small {
+    font-size: $size-small;
+  }
+
+  &.is-medium {
+    font-size: $size-medium;
+  }
+
+  &.is-large {
+    font-size: $size-large;
+  }
+}

@@ -1,0 +1,50 @@
+.blog-posts__nav-wrapper {
+  display: none;
+  margin-bottom: 10px;
+
+  @include respond-to("medium-down") {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include respond-to("small-down") {
+    justify-content: space-between;
+  }
+}
+
+.blog-posts__nav {
+  color: $link;
+  cursor: pointer;
+
+  &.blog-posts__nav--prev {
+    margin-right: 10px;
+
+    @include respond-to("small-down") {
+      margin-right: 0;
+    }
+  }
+}
+
+.blog-posts__wrapper {
+  .flickity-page-dots {
+    bottom: 0;
+
+    @include respond-to("medium-up") {
+      display: none;
+    }
+  }
+
+  &.blog-posts__wrapper--page-dots-true {
+    @include respond-to("medium-down") {
+      padding-bottom: 25px;
+    }
+  }
+
+  /* Enable flickity on mobile */
+  @include respond-to("medium-down") {
+    &::after {
+      display: none;
+      content: "flickity";
+    }
+  }
+}

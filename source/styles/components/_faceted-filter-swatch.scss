@@ -1,0 +1,49 @@
+.faceted-filter-swatch {
+  #{"--faceted-filter-swatch-size"}: 20px;
+  flex-shrink: 0;
+  width: var(--faceted-filter-swatch-size);
+  height: var(--faceted-filter-swatch-size);
+  cursor: pointer;
+  border: 1px solid liquid-object("settings.border_color");
+
+  &.faceted-filter-swatch--rounded {
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .faceted-filter-group-display__list-item-input:focus ~ & {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+.faceted-filter-swatch__color,
+.faceted-filter-swatch__image {
+  width: 100%;
+  height: 100%;
+}
+
+.faceted-filter-swatch__color {
+  background-color: var(--faceted-filter-swatch-color, transparent);
+}
+
+.faceted-filter-swatch__image {
+  object-fit: cover;
+}
+
+.faceted-filter-group-display__list-item-input:focus ~ .faceted-filter-image {
+  .faceted-filter-image__image {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+
+.faceted-filter-group-display__list-item-input:not(:disabled) ~ .faceted-filter-image {
+  .faceted-filter-image__image {
+    cursor: pointer;
+  }
+}
+
+.faceted-filter-image__image {
+  width: 50px;
+  height: auto;
+}

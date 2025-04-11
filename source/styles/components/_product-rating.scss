@@ -1,0 +1,69 @@
+#icon-star {
+  color: $color-product-review-star;
+}
+
+.icon-star-background {
+  transition: none;
+  transform: scaleX(var(--rating-scale, 0));
+}
+
+.icon-star-reference {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.rating__star-wrapper {
+  display: flex;
+}
+
+.rating__star {
+  width: 19px;
+  height: auto;
+}
+
+.rating__star-1 {
+  --rating-scale: calc(var(--rating-value));
+}
+
+.rating__star-2 {
+  --rating-scale: calc(var(--rating-value) - 1);
+}
+
+.rating__star-3 {
+  --rating-scale: calc(var(--rating-value) - 2);
+}
+
+.rating__star-4 {
+  --rating-scale: calc(var(--rating-value) - 3);
+}
+
+.rating__star-5 {
+  --rating-scale: calc(var(--rating-value) - 4);
+}
+
+.rating__text {
+  display: none;
+}
+
+.rating__count {
+  margin: 0 0 0 5px;
+}
+
+@media (forced-colors: active) {
+  .rating__star-wrapper {
+    display: none;
+  }
+
+  .rating__text {
+    display: block;
+  }
+}

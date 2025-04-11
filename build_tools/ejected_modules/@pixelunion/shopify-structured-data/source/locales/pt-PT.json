@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Carrinho",
+      "collections": "Coleções",
+      "page": "Página {{ page }}",
+      "products": "Produtos",
+      "search": "Busca",
+      "tags_html": "Marcado \"{{ tags }}\""
+    }
+  }
+}

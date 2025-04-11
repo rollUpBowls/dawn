@@ -1,0 +1,10 @@
+{
+  "product": {
+    "variants": {
+      "choose_option": "एक {{ option }} चुनें",
+      "chosen_option_html": "{{ option }}: <span>{{ value }}</span>",
+      "choose_variant": "एक संस्करण चुनें",
+      "unavailable": "अनुपलब्ध"
+    }
+  }
+}

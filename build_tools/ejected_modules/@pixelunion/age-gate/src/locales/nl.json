@@ -1,0 +1,23 @@
+{
+  "age_gate": {
+    "form": {
+      "confirm": "Bevestig de leeftijd en ga verder naar {{ shop }}",
+      "error": "Winkeltoegang is beperkt tot volwassenen leeftijd {{ age }} en ouder.",
+      "day": "Dag",
+      "month": "Maand",
+      "year": "Jaar",
+      "january": "Januari",
+      "february": "Februari",
+      "march": "Maart",
+      "april": "april",
+      "may": "Kunnen",
+      "june": "juni-",
+      "july": "juli-",
+      "august": "augustus",
+      "september": "september",
+      "october": "oktober",
+      "november": "November",
+      "december": "December"
+    }
+  }
+}

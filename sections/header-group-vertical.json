@@ -1,0 +1,76 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement_bar": {
+      "type": "announcement-bar"
+    },
+    "header": {
+      "type": "header-vertical",
+      "blocks": {
+        "logo": {
+          "type": "logo"
+        },
+        "icons": {
+          "type": "icons"
+        },
+        "search": {
+          "type": "search"
+        },
+        "navigation": {
+          "type": "navigation"
+        },
+        "payment_icons": {
+          "type": "payment_icons"
+        },
+        "copyright": {
+          "type": "copyright"
+        }
+      },
+      "block_order": [
+        "logo",
+        "icons",
+        "search",
+        "navigation",
+        "payment_icons",
+        "copyright"
+      ]
+    },
+    "mega_menu": {
+      "type": "mega-menu",
+      "blocks": {
+        "menu": {
+          "type": "menu"
+        },
+        "featured_promo": {
+          "type": "featured_promo"
+        },
+        "mixed": {
+          "type": "mixed"
+        },
+        "empty_column": {
+          "type": "empty_column"
+        },
+        "image": {
+          "type": "image"
+        },
+        "featured_product": {
+          "type": "featured_product"
+        }
+      },
+      "block_order": [
+        "menu",
+        "featured_promo",
+        "mixed",
+        "empty_column",
+        "image",
+        "featured_product"
+      ]
+    }
+  },
+  "order": [
+    "announcement_bar",
+    "header",
+    "mega_menu"
+  ]
+}

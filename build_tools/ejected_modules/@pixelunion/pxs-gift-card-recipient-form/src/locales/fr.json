@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "Je souhaite envoyer ceci en cadeau",
+      "email_label": "Adresse e-mail du destinataire",
+      "email_placeholder": "Adresse e-mail du destinataire *",
+      "error_message": "L'adresse e-mail n'est pas valide",
+      "name_label": "Nom du destinataire (facultatif)",
+      "name_placeholder": "Nom du destinataire (facultatif)",
+      "message_label": "Message (facultatif)",
+      "message_placeholder": "Message (facultatif)",
+      "max_characters": "Maximum de {{ max_characters }} caractères",
+      "send_on_label": "Envoyer le (facultatif)",
+      "send_on_placeholder": "AAAA-MM-JJ"
+    }
+  }
+}

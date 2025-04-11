@@ -1,0 +1,219 @@
+/* # Header - Vertical
+================================================== */
+
+@liquid-if "settings.header_layout == 'vertical'" {
+
+  $vertical-header-padding: 1.5rem;
+  $width: 20%;
+
+  .has-vertical-header {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+
+    @include respond-to('medium-up') {
+      display: grid;
+      grid-template-areas:
+        "header announcement"
+        "header main-content"
+        "header additional";
+    }
+
+    .is-beside-vertical-header ~ * {
+      grid-area: additional;
+    }
+  }
+
+  .is-beside-vertical-header {
+    grid-area: main-content;
+
+    @include respond-to('medium-down') {
+      width: 100%;
+    }
+  }
+
+  .header--vertical {
+    position: relative;
+    z-index: 100;
+    grid-area: header;
+    color: $header-link;
+    background: $header-background;
+
+    .block__icons {
+      position: relative;
+    }
+
+    .sidebar-block__heading {
+      color: $header-link;
+    }
+
+    .sidebar-block__content {
+      padding-top: 0.9rem;
+    }
+
+    a {
+      color: $header-link;
+
+      &:hover {
+        color: $header-link-hover;
+      }
+    }
+  }
+
+  .vertical-header__content {
+    @include respond-to('medium-down') {
+      display: none;
+    }
+
+    .header__icons.header__icons--left {
+      justify-content: flex-start;
+    }
+
+    .header__icons.header__icons--center {
+      justify-content: center;
+    }
+  }
+
+  .vertical-header__menu-items {
+    padding: 1rem 0 0;
+  }
+
+  .vertical-header__block:first-child {
+    padding-top: $gutter;
+  }
+
+  .header__logo {
+    display: block;
+  }
+
+  .header__logo-text {
+    word-break: break-word;
+  }
+
+  .block__social-media .icon {
+    margin: 0 5px;
+  }
+
+  .action-area__link.has-cart-count {
+    padding-right: 1.8em;
+  }
+
+  .vertical-header__block:not(.block__navigation) {
+    padding-left: $vertical-header-padding;
+    padding-right: $vertical-header-padding;
+  }
+
+  .vertical-header__first-level {
+    padding-left: $vertical-header-padding;
+    padding-right: $vertical-header-padding;
+
+    .navbar-dropdown {
+      left: 100%;
+      top: 0;
+      width: 22vw;
+      padding: 1rem 0.8em;
+      max-width: 300px;
+      min-width: 200px;
+    }
+
+    .vertical-header__first-level-link::after,
+    &.has-dropdown:hover .vertical-header__first-level-link::after,
+    &.has-mega-menu:hover .vertical-header__first-level-link::after,
+    &.has-dropdown.is-opened .vertical-header__first-level-link::after,
+    &.has-mega-menu.is-opened .vertical-header__first-level-link::after {
+      transform: translateY(-110%) rotate(-90deg);
+    }
+  }
+
+  .menu-alignment--center .vertical-header__first-level {
+    padding-left: 0;
+    padding-right: 0;
+
+    .vertical-header__first-level-link {
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+    }
+  }
+
+  .vertical-header__first-level-link {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 1rem;
+
+    &::after {
+      transition: all 0s;
+    }
+
+    &.mobile-menu-link {
+      padding: 0 0 1rem;
+    }
+  }
+
+  .navbar-dropdown--fix-offscreen {
+    top: -100% !important; //override dropdown position when off screen
+  }
+
+  .mega-menu--header-vertical.mega-menu {
+
+    @include respond-to('medium-up') {
+      top: 0;
+      left: 100%;
+      bottom: 0;
+      width: 22vw;
+      min-height: 100vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+
+      .mega-menu__block {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Vertical header currency/language switcher */
+
+  .vertical-header__disclosure {
+
+    .selectors-wrap {
+      justify-content: flex-start;
+    }
+
+    .disclosure__toggle,
+    .disclosure__button {
+      color: liquid-object("settings.regular_color");
+
+      &:hover,
+      &[aria-current="true"] {
+        color: liquid-object("settings.regular_color | color_modify: 'alpha', 0.33");
+      }
+    }
+
+    .disclosure__list-wrap {
+      top: initial;
+    }
+  }
+
+  // CSS-only Dropdowns
+  .no-js {
+    .mega-menu-section {
+      position: absolute;
+      left: 0;
+      width: $width;
+      height: 100vh;
+      top: 0;
+    }
+
+    .mega-menu__section {
+      height: 100vh;
+      top: 0;
+      z-index: 200;
+      left: 0;
+    }
+
+    .mega-menu--header-vertical.mega-menu {
+      width: 20vw;
+    }
+
+  }
+}

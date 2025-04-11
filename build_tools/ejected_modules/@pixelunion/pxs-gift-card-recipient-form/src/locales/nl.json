@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "Ik wil dit als cadeau versturen",
+      "email_label": "E-mailadres ontvanger",
+      "email_placeholder": "E-mailadres ontvanger *",
+      "error_message": "E-mailadres is niet geldig",
+      "name_label": "Naam ontvanger (optioneel)",
+      "name_placeholder": "Naam ontvanger (optioneel)",
+      "message_label": "Bericht (optioneel)",
+      "message_placeholder": "Bericht (optioneel)",
+      "max_characters": "Maximaal {{ max_characters }} tekens",
+      "send_on_label": "Verzenden op (optioneel)",
+      "send_on_placeholder": "JJJJ-MM-DD"
+    }
+  }
+}

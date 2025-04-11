@@ -1,0 +1,23 @@
+{
+  "age_gate": {
+    "form": {
+      "confirm": "Confirmar la edad y proceder a {{ shop }}",
+      "error": "El acceso al taller se limita a la edad de los adultos {{ age }} y mayores.",
+      "day": "Día",
+      "month": "Mes",
+      "year": "Año",
+      "january": "enero",
+      "february": "Febrero",
+      "march": "Marzo",
+      "april": "Abril",
+      "may": "Mayo",
+      "june": "Junio",
+      "july": "Julio",
+      "august": "Agosto",
+      "september": "Septiembre",
+      "october": "Octubre",
+      "november": "Noviembre",
+      "december": "Diciembre"
+    }
+  }
+}

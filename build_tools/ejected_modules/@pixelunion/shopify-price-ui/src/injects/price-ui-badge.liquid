@@ -1,0 +1,27 @@
+{%- assign locale_badge_sold_out = 'product.badge.sold_out' | t -%}
+{%- assign locale_badge_on_sale = 'product.badge.sale' | t -%}
+
+<div class="price-ui-badge price-ui-badge--loading" data-price-ui-badge>
+  <noscript>
+    <style>
+      .price-ui-badge--loading {
+        display: block !important;
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+
+  {% if product.available == false %}
+    {%-
+      render 'price-ui-templates',
+      template: 'price-ui-badge',
+      badge: locale_badge_sold_out,
+    -%}
+  {%- elsif product.compare_at_price > product.price -%}
+    {%-
+      render 'price-ui-templates',
+      template: 'price-ui-badge',
+      badge: locale_badge_on_sale,
+    -%}
+  {%- endif -%}
+</div>

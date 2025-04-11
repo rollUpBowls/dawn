@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "カート",
+      "collections": "コレクション",
+      "page": "ページ {{ page }}",
+      "products": "プロダクツ",
+      "search": "サーチ",
+      "tags_html": "タグ付き \"{{ tags }}\""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Näytä ostoskori",
+      "collections": "Kokoelmat",
+      "page": "Sivu {{ page }}",
+      "products": "Tuotteet",
+      "search": "Haku",
+      "tags_html": "Tagged \"{{ tags }}\""
+    }
+  }
+}

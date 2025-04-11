@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "I want to send this as a gift",
+      "email_label": "Recipient email",
+      "email_placeholder": "Recipient email *",
+      "error_message": "Email is not valid",
+      "name_label": "Recipient name (optional)",
+      "name_placeholder": "Recipient name (optional)",
+      "message_label": "Message (optional)",
+      "message_placeholder": "Message (optional)",
+      "max_characters": "{{ max_characters }} characters max",
+      "send_on_label": "Send on (optional)",
+      "send_on_placeholder": "YYYY-MM-DD"
+    }
+  }
+}

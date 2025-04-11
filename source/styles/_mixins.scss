@@ -1,0 +1,522 @@
+/* # Mixins
+================================================== */
+// Clearfix for parents with floated children
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+// Media query mixin
+
+@mixin respond-to($media-query) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+  }
+
+  @if $breakpoint-found == false {
+    @warn 'Breakpoint "#{$media-query}" does not exist';
+  }
+}
+
+// Responsive Show/Hide Helper
+
+@mixin responsive-display-helper($breakpoint: '') {
+  .#{$breakpoint}show {
+    display: block !important;
+  }
+
+  .#{$breakpoint}hide {
+    display: none !important;
+  }
+}
+
+// Responsive Text Alignment Helper
+@mixin responsive-text-align-helper($breakpoint: '') {
+  .#{$breakpoint}text-left {
+    text-align: left !important;
+  }
+
+  .#{$breakpoint}text-right {
+    text-align: right !important;
+  }
+
+  .#{$breakpoint}text-center {
+    text-align: center !important;
+  }
+}
+
+//Flexbox
+// Flexbox display
+
+// Logo text styles
+@mixin logo-text-style() {
+  font-family: liquid-object("settings.logo__font.family"), liquid-object("settings.logo__font.fallback_families");
+  font-weight: liquid-object("settings.logo__font.weight");
+  font-style: liquid-object("settings.logo__font.style");
+  font-size: liquid-object("settings.logo_font_size | append: 'px'");
+  text-transform: liquid-object("settings.logo_font_style");
+}
+
+// Headline base styles for h1-h6
+
+@mixin headline-style($font-size-liquid-reference) {
+  font-family: liquid-object("settings.heading__font.family"), liquid-object("settings.heading__font.fallback_families");
+  font-weight: liquid-object("settings.heading__font.weight");
+  font-style: liquid-object("settings.heading__font.style");
+  font-size: liquid-object("#{$font-size-liquid-reference} | append: 'px'");
+  text-transform: liquid-object("settings.heading_font_style");
+  line-height: 1.5;
+  color: liquid-object("settings.heading_color");
+  display: block;
+  letter-spacing: liquid-object("settings.heading_letter_spacing | append: 'px'");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include respond-to('medium-down') {
+    font-size: liquid-object("#{$font-size-liquid-reference} | times: 0.8 | floor | append: 'px'");
+  }
+
+  > a,
+  > a:link,
+  > a:visited {
+    color: liquid-object("settings.heading_color");
+  }
+
+  > a:hover,
+  > a:focus, {
+    color: $link-hover;
+  }
+}
+
+// Absolutely positioned center elements (vertical and horizontal)
+
+@mixin center($width, $height: 0) {
+  position: absolute;
+
+  @if $height != 0 {
+    left: calc(50% - (#{$width} / 2));
+    top: calc(50% - (#{$height} / 2));
+  }
+  @else {
+    left: calc(50% - (#{$width} / 2));
+    top: calc(50% - (#{$width} / 2));
+  }
+}
+
+// Icon mixin for alignment
+
+@mixin icon($size, $dimensions) {
+  display: inline-block;
+  font-size: $size;
+  height: $dimensions;
+  line-height: $dimensions;
+  text-align: center;
+  vertical-align: top;
+  width: $dimensions;
+}
+
+// Create non-icon hamburger menu
+
+@mixin hamburger($dimensions) {
+  cursor: pointer;
+  display: block;
+  height: $dimensions;
+  position: relative;
+  width: $dimensions;
+
+  span {
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: $speed;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: $easing;
+    width: 16px;
+
+    &:nth-child(1) {
+      top: calc(50% - 6px);
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% + 4px);
+    }
+  }
+
+  &:hover {
+    background-color: rgba(black, 0.05);
+  }
+
+  // Modifers
+  &.is-active {
+    span {
+      &:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+@mixin overflow-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+// Vendor prefix for placeholders
+
+@mixin placeholder {
+  $placeholders: ":-moz" ":-webkit-input" "-moz" "-ms-input";
+
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+
+// Disabled placeholders
+%unselectable {
+  user-select: none;
+}
+
+/*
+  {% case settings.icon %}
+    {% when 'icon_solid' %}
+      {% assign icon_down_caret = '"\e902"' %}
+      {% assign icon_x = '"\e903"' %}
+    {% when 'icon_outline' %}
+      {% assign icon_down_caret = '"\e904"' %}
+      {% assign icon_x = '"\e905"' %}
+    {% when 'icon_brush' %}
+      {% assign icon_down_caret = '"\e900"' %}
+      {% assign icon_x = '"\e901"' %}
+  {% endcase %}
+*/
+
+@mixin arrow($color: transparent) {
+  font-family: 'flex-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: liquid-object("icon_down_caret");
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+}
+
+%arrow {
+  @include arrow;
+}
+
+@mixin block {
+  &:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+%block {
+  @include block;
+}
+
+// Delete icon
+
+@mixin delete {
+  @extend %unselectable;
+
+  appearance: none;
+  background-color: rgba($black, 0.2);
+  border: none;
+  border-radius: $radius-rounded;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+
+  &::before,
+  &::after {
+    background-color: $white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+  }
+
+  &::before {
+    height: 2px;
+    width: 50%;
+  }
+
+  &::after {
+    height: 50%;
+    width: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($black, 0.3);
+  }
+
+  &:active {
+    background-color: rgba($black, 0.4);
+  }
+
+  // Sizes
+  &.is-small {
+    height: 16px;
+    max-height: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    width: 16px;
+  }
+
+  &.is-medium {
+    height: 24px;
+    max-height: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    width: 24px;
+  }
+
+  &.is-large {
+    height: 32px;
+    max-height: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    width: 32px;
+  }
+}
+
+%delete {
+  @include delete;
+}
+
+// Close icon
+
+@mixin close {
+  @extend %unselectable;
+
+  appearance: none;
+  background-color: rgba($black, 0.2);
+  border: none;
+  border-radius: $radius-rounded;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  display: inline-flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  width: 20px;
+  padding: 0;
+  color: currentColor;
+  transition: 0.2s linear;
+
+  .icon {
+    fill: currentColor;
+    height: 50%;
+    max-height: 50%;
+    max-width: 50%;
+    min-height: 50%;
+    min-width: 50%;
+    width: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($black, 0.3);
+  }
+
+  &:active {
+    background-color: rgba($black, 0.4);
+  }
+
+  // Sizes
+  &.is-small {
+    height: 16px;
+    max-height: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    width: 16px;
+  }
+
+  &.is-medium {
+    height: 24px;
+    max-height: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    width: 24px;
+  }
+
+  &.is-large {
+    height: 32px;
+    max-height: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    width: 32px;
+  }
+}
+
+%close {
+  @include close;
+}
+
+// Animated loader
+
+@mixin loader {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid $grey-lighter;
+  border-radius: $radius-rounded;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em;
+}
+
+%loader {
+  @include loader;
+}
+
+@mixin overlay($offset: 0) {
+  bottom: $offset;
+  left: $offset;
+  position: absolute;
+  right: $offset;
+  top: $offset;
+}
+
+%overlay {
+  @include overlay;
+}
+
+// Product stickers
+
+@mixin sale-sticker {
+  background-color: $sale-sticker-color;
+  color: $sale-sticker-color-text;
+}
+
+@mixin new-sticker {
+  background-color: $new-sticker-color;
+  color: $new-sticker-color-text;
+}
+
+@mixin bestseller-sticker {
+  background-color: $bestseller-sticker-color;
+  color: $bestseller-sticker-color-text;
+}
+
+@mixin comingsoon-sticker {
+  background-color: $comingsoon-sticker-color;
+  color: $comingsoon-sticker-color-text;
+}
+
+@mixin staffpick-sticker {
+  background-color: $staffpick-sticker-color;
+  color: $staffpick-sticker-color-text;
+}
+
+@mixin preorder-sticker {
+  background-color: $preorder-sticker-color;
+  color: $preorder-sticker-color-text;
+}
+
+// Search icon button
+@mixin search-icon-button {
+  button {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(20%, -50%);
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    .icon {
+      position: relative;
+      transform: none;
+      padding: 3px;
+    }
+  }
+}
+
+// Search background overlay
+@mixin search-bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+}

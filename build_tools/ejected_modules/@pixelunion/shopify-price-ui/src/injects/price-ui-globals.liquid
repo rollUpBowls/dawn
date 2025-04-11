@@ -1,0 +1,21 @@
+{%- capture price -%}{%- render 'price-ui-templates', template: 'price' -%}{%- endcapture -%}
+{%- capture price_percent -%}{%- render 'price-ui-templates', template: 'price-percent' -%}{%- endcapture -%}
+{%- capture price_min -%}{%- render 'price-ui-templates', template: 'price-min' -%}{%- endcapture -%}
+{%- capture price_max -%}{%- render 'price-ui-templates', template: 'price-max' -%}{%- endcapture -%}
+{%- capture unit_quantity -%}{%- render 'price-ui-templates', template: 'unit-quantity' -%}{%- endcapture -%}
+{%- capture unit_price -%}{%- render 'price-ui-templates', template: 'unit-price' -%}{%- endcapture -%}
+{%- capture unit_measurement -%}{%- render 'price-ui-templates', template: 'unit-measurement' -%}{%- endcapture -%}
+
+<template id="price-ui">{%- render 'price-ui-templates', template: 'price-ui' -%}</template>
+<template id="price-ui-badge">{%- render 'price-ui-templates', template: 'price-ui-badge' -%}</template>
+
+<template id="price-ui__price">{{ price }}</template>
+<template id="price-ui__price-range">{{- 'product.price.range_html' | t: price_min: price_min, price_max: price_max -}}</template>
+<template id="price-ui__unit-pricing">{{- 'product.price.unit_pricing_html' | t: unit_quantity: unit_quantity, unit_price: unit_price, unit_measurement: unit_measurement -}}</template>
+<template id="price-ui-badge__percent-savings-range">{{- 'product.badge.sale_percentage_range_html' | t: price_percent: price_percent -}}</template>
+<template id="price-ui-badge__percent-savings">{{- 'product.badge.sale_percentage_single_html' | t: price_percent: price_percent -}}</template>
+<template id="price-ui-badge__price-savings-range">{{- 'product.badge.sale_money_range_html' | t: price: price -}}</template>
+<template id="price-ui-badge__price-savings">{{- 'product.badge.sale_money_single_html' | t: price: price -}}</template>
+<template id="price-ui-badge__on-sale">{{- 'product.badge.sale' | t -}}</template>
+<template id="price-ui-badge__sold-out">{{- 'product.badge.sold_out' | t -}}</template>
+<template id="price-ui-badge__in-stock">{{- 'product.badge.in_stock' | t -}}</template>

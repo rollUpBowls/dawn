@@ -1,0 +1,17 @@
+{
+  "product": {
+    "price": {
+      "range_html": "{{ price_min }} - {{ price_max }}",
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+    },
+    "badge": {
+      "sale_percentage_range_html": "Save up to {{ price_percent }}%",
+      "sale_percentage_single_html": "Save {{ price_percent }}%",
+      "sale_money_range_html": "Save up to {{ price }}",
+      "sale_money_single_html": "Save {{ price }}",
+      "sold_out": "Sold out",
+      "sale": "Sale",
+      "in_stock": "In stock"
+    }
+  }
+}

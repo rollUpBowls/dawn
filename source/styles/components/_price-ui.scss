@@ -1,0 +1,59 @@
+.price-ui {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+  color: $body-color;
+}
+
+.price-ui,
+.price-ui-badge {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+
+.price-ui--loading,
+.price-ui-badge--loading {
+  opacity: 0;
+}
+
+.price--sale {
+  color: liquid-object("settings.sale_color");
+}
+
+.price + .compare-at-price {
+  margin-left: 5px;
+}
+
+.price,
+.compare-at-price {
+  .money {
+    display: inline-block;
+  }
+}
+
+.compare-at-price {
+  text-decoration: line-through;
+  opacity: 0.6;
+
+  .money {
+    text-decoration: line-through;
+  }
+}
+
+.sale.savings {
+  width: 100%;
+}
+
+.unit-pricing {
+  order: 1;
+  width: 100%;
+  font-size: 1rem;
+  color: $body-color;
+}
+
+shopify-payment-terms {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: $size-small;
+}

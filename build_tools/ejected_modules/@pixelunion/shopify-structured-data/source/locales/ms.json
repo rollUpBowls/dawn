@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Troli",
+      "collections": "Koleksi",
+      "page": "Halaman {{ page }}",
+      "products": "Produk",
+      "search": "Cari",
+      "tags_html": "Ditandai \"{{ tags }}\""
+    }
+  }
+}

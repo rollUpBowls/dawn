@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "ギフトとして送信したいです",
+      "email_label": "受信者のメールアドレス",
+      "email_placeholder": "受信者のメールアドレス *",
+      "error_message": "メールアドレスが無効です",
+      "name_label": "受信者の名前（任意）",
+      "name_placeholder": "受信者の名前（任意）",
+      "message_label": "メッセージ（任意）",
+      "message_placeholder": "メッセージ（任意）",
+      "max_characters": "最大{{ max_characters }}文字",
+      "send_on_label": "送信日 (任意)",
+      "send_on_placeholder": "YYYY-MM-DD"
+    }
+  }
+}

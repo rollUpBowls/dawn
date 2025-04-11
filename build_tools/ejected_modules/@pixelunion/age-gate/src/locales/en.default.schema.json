@@ -1,0 +1,34 @@
+{
+  "settings_schema": {
+    "age_gate": {
+      "name": "Age gate",
+      "enable_site_wide": {
+        "label": "Enable site-wide"
+      },
+      "minimum_age": {
+        "label": "Minimum age required to access site"
+      },
+      "heading": {
+        "label": "Heading"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "show_logo": {
+        "label": "Show logo",
+        "info": "Visit [brand settings](/admin/settings/branding) to edit logo."
+      }
+    }
+  },
+  "sections": {
+    "age_gate": {
+      "name": "Page age gate",
+      "minimum_age": {
+        "label": "Minimum age required to access page"
+      },
+      "presets": {
+        "name": "Page age gate"
+      }
+    }
+  }
+}

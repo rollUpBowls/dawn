@@ -1,0 +1,72 @@
+{% comment %}
+  Display variant options for a product
+
+  @param product
+  @param select_first_available_variant
+  @param selected_variant
+  @param variant_selection_id
+  @param sold_out_options
+  @param style
+
+  @param enable_swatches
+  @param swatches_shape
+  @param swatches_option_trigger
+  @param swatches_option_style
+  @param swatches_product_page_size
+  @param swatches_custom_colors
+{% endcomment %}
+
+{%- if select_first_available_variant == nil -%}
+  {% assign select_first_available_variant = true %}
+{%- endif -%}
+
+<variant-selection
+  {% if variant_selection_id != blank %}id="{{ variant_selection_id }}"{% endif %}
+  class="variant-selection"
+  product-url="{{ product.url }}.js"
+  variant="{% if selected_variant %}{{ selected_variant.id }}{% else %}not-selected{% endif %}"
+  data-variant-selection
+>
+  {% if product.has_only_default_variant %}
+    <input
+      class="variant-selection__variants variant-selection__variants--default"
+      name="id"
+      type="hidden"
+      value="{{ product.variants.first.id }}"
+      data-variants
+    >
+  {% else %}
+    <noscript>
+      <style>
+        .variant-selection__variants {
+          display: block !important;
+        }
+      </style>
+    </noscript>
+    <select
+      class="variant-selection__variants"
+      name="id"
+      style="display: none"
+      data-variants
+    >
+      <option
+        value="not-selected"
+        disabled
+        {% if selected_variant == blank %}selected{% endif %}
+      >
+        {{ 'product.variants.choose_variant' | t }}
+      </option>
+      {% for variant in product.variants %}
+        <option
+          {% if selected_variant and selected_variant.id == variant.id %}selected{% endif %}
+          value="{{ variant.id }}"
+          {% unless variant.available %}disabled{% endunless %}
+        >
+          {{ variant.title }} - {{ variant.price | money }}
+        </option>
+      {% endfor %}
+    </select>
+
+    {% inject '@pixelunion/shopify-variants-ui/options-selection' %}
+  {% endif %}
+</variant-selection>

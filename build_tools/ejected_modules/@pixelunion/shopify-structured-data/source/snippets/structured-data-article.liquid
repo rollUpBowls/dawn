@@ -1,0 +1,49 @@
+{% comment %}
+  Article structured data
+  https://developers.google.com/search/docs/data-types/articles
+{% endcomment %}
+
+{% if template contains 'article' %}
+  {%- capture article_description  -%}
+    {%- if article.excerpt != blank -%}
+      {{ article.excerpt | strip_html }}
+    {%- else -%}
+      {{ article.content | truncatewords: 100 | strip_html }}
+    {%- endif -%}
+  {%- endcapture -%}
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ shop.url }}{{ article.url }}"
+      },
+      "headline": {{ article.title | json }},
+      {% if article.image %}
+        "image": {
+          "@type": "ImageObject",
+          "url": {{ article.image | img_url: '800x800' | prepend: 'https:' | json }},
+          "height": 800,
+          "width": 800
+        },
+      {% endif %}
+      "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json}},
+      "dateModified": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json}},
+      "author": {
+        "@type": "Person",
+        "name": {{ article.author | json }}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ shop.name | json }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ article.user.image | img_url: '200x200' | prepend: 'https:' | json }}
+        }
+      },
+      "description": {{ article_description | json }}
+    }
+  </script>
+{% endif %}

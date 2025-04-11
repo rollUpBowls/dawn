@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "購物車",
+      "collections": "各項系列",
+      "page": "頁面 {{ page }}",
+      "products": "製品",
+      "search": "搜尋",
+      "tags_html": "標記 \"{{ tags }}\""
+    }
+  }
+}

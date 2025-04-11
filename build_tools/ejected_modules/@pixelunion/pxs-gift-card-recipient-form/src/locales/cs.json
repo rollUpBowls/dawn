@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "Chci to poslat jako dárek",
+      "email_label": "E-mail příjemce",
+      "email_placeholder": "E-mail příjemce *",
+      "error_message": "E-mail není platný",
+      "name_label": "Jméno příjemce (volitelné)",
+      "name_placeholder": "Jméno příjemce (volitelné)",
+      "message_label": "Zpráva (volitelné)",
+      "message_placeholder": "Zpráva (volitelné)",
+      "max_characters": "Maximálně {{ max_characters }} znaků",
+      "send_on_label": "Datum odeslání (volitelné)",
+      "send_on_placeholder": "RRRR-MM-DD"
+    }
+  }
+}

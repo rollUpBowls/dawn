@@ -1,0 +1,34 @@
+{
+  "settings_schema": {
+    "age_gate": {
+      "name": "Portail d'âge",
+      "enable_site_wide": {
+        "label": "Activer à l'échelle du site"
+      },
+      "minimum_age": {
+        "label": "Âge minimum requis pour accéder au site"
+      },
+      "heading": {
+        "label": "Titre"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "show_logo": {
+        "label": "Afficher le logo",
+        "info": "Visitez les [paramètres de la marque](/admin/settings/branding) pour modifier le logo."
+      }
+    }
+  },
+  "sections": {
+    "age_gate": {
+      "name": "Portail d'âge de la page",
+      "minimum_age": {
+        "label": "Âge minimum requis pour accéder à la page"
+      },
+      "presets": {
+        "name": "Portail d'âge de la page"
+      }
+    }
+  }
+}

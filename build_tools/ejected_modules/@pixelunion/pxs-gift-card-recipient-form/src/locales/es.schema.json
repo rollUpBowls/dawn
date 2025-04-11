@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "product": {
+      "blocks": {
+        "form": {
+          "show_gift_card_recipient_form": {
+            "label": "Mostrar formulario de información del destinatario para productos de tarjetas de regalo",
+            "info": "Los productos de tarjetas de regalo se pueden enviar opcionalmente directamente al destinatario junto con un mensaje personal. [Más información](https:\/\/help.shopify.com\/es\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+          }
+        }
+      }
+    }
+  }
+}

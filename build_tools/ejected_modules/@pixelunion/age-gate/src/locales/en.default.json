@@ -1,0 +1,23 @@
+{
+  "age_gate": {
+    "form": {
+      "confirm": "Confirm age and proceed to {{ shop }}",
+      "error": "Shop access is limited to adults age {{ age }} and older.",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  }
+}

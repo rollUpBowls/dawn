@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "product": {
+      "blocks": {
+        "form": {
+          "show_gift_card_recipient_form": {
+            "label": "Formular zur Anzeige von Empfängerinformationen für Geschenkkartenprodukte",
+            "info": "Geschenkkartenprodukte können optional zusammen mit einer persönlichen Nachricht direkt an den Empfänger gesendet werden. [Weitere Informationen](https:\/\/help.shopify.com\/de\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+          }
+        }
+      }
+    }
+  }
+}

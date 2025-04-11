@@ -1,0 +1,34 @@
+{
+  "settings_schema": {
+    "age_gate": {
+      "name": "Controllo dell'età",
+      "enable_site_wide": {
+        "label": "Abilita a livello di sito"
+      },
+      "minimum_age": {
+        "label": "Età minima richiesta per accedere al sito"
+      },
+      "heading": {
+        "label": "Titolo"
+      },
+      "description": {
+        "label": "Descrizione"
+      },
+      "show_logo": {
+        "label": "Mostra logo",
+        "info": "Vai su [impostazioni del marchio](/admin/settings/branding) per modificare il logo."
+      }
+    }
+  },
+  "sections": {
+    "age_gate": {
+      "name": "Pagina di controllo dell'età",
+      "minimum_age": {
+        "label": "Età minima richiesta per accedere alla pagina"
+      },
+      "presets": {
+        "name": "Pagina di controllo dell'età"
+      }
+    }
+  }
+}

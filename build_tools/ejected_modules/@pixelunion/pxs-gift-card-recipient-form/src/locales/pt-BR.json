@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "Eu quero enviar isso como um presente",
+      "email_label": "E-mail do destinatário",
+      "email_placeholder": "E-mail do destinatário *",
+      "error_message": "O e-mail não é válido",
+      "name_label": "Nome do destinatário (opcional)",
+      "name_placeholder": "Nome do destinatário (opcional)",
+      "message_label": "Mensagem (opcional)",
+      "message_placeholder": "Mensagem (opcional)",
+      "max_characters": "Máximo de {{ max_characters }} caracteres",
+      "send_on_label": "Enviar em (opcional)",
+      "send_on_placeholder": "AAAA-MM-DD"
+    }
+  }
+}

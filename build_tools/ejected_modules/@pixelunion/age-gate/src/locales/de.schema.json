@@ -1,0 +1,34 @@
+{
+  "settings_schema": {
+    "age_gate": {
+      "name": "Altersgrenze",
+      "enable_site_wide": {
+        "label": "Websiteweit aktivieren."
+      },
+      "minimum_age": {
+        "label": "Erforderliches Mindestalter für den Zugang zur Website."
+      },
+      "heading": {
+        "label": "Überschrift"
+      },
+      "description": {
+        "label": "Beschreibung"
+      },
+      "show_logo": {
+        "label": "Logo anzeigen",
+        "info": "Besuchen Sie die [Markeneinstellungen](/admin/settings/branding), um das Logo zu bearbeiten."
+      }
+    }
+  },
+  "sections": {
+    "age_gate": {
+      "name": "Altersgrenze für Seite",
+      "minimum_age": {
+        "label": "Erforderliches Mindestalter für den Zugriff auf die Seite"
+      },
+      "presets": {
+        "name": "Altersgrenze für Seite"
+      }
+    }
+  }
+}

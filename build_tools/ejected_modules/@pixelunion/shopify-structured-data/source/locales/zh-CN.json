@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "购物车",
+      "collections": "产品集合",
+      "page": "页 {{ page }}",
+      "products": "制品",
+      "search": "搜索",
+      "tags_html": "标记 \"{{ tags }}\""
+    }
+  }
+}

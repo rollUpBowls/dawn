@@ -1,0 +1,25 @@
+@import "../../../build_tools/ejected_modules/@pixelunion/age-gate/src/styles/age-gate";
+
+.age-gate__heading {
+  @extend h1;
+}
+
+.age-gate__select-label {
+  @extend .visually-hidden;
+}
+
+.age-gate__select-wrapper {
+  @extend .select;
+  width: 100%;
+
+  .age-gate__select {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.age-gate__confirm_btn {
+  @extend .button;
+  @include btn-primary;
+  @include button-medium;
+}

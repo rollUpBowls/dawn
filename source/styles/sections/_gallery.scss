@@ -1,0 +1,140 @@
+/* # Gallery
+================================================== */
+
+.gallery__nav-wrapper {
+  display: none;
+  margin-bottom: 10px;
+
+  @include respond-to("medium-down") {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include respond-to("small-down") {
+    justify-content: space-between;
+  }
+}
+
+.gallery__nav {
+  color: $link;
+  cursor: pointer;
+
+  &.gallery__nav--prev {
+    margin-right: 10px;
+
+    @include respond-to("small-down") {
+      margin-right: 0;
+    }
+  }
+}
+
+.gallery__wrapper {
+  .flickity-page-dots {
+    bottom: 0;
+
+    @include respond-to("medium-up") {
+      display: none;
+    }
+  }
+
+  &.gallery__wrapper--page-dots-true.flickity-enabled {
+    @include respond-to("medium-down") {
+      padding-bottom: 25px;
+    }
+  }
+
+  /* Enable flickity on mobile */
+  @include respond-to("medium-down") {
+    &::after {
+      display: none;
+      content: "flickity";
+    }
+  }
+
+  &.gallery__wrapper--classic {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &.gallery__wrapper--vertical-masonry,
+  &.gallery__wrapper--horizontal-masonry {
+    justify-content: center;
+  }
+
+  &.gallery__wrapper--horizontal-masonry {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gallery__item {
+  position: relative;
+
+  &:hover .gallery-item__overlay {
+    opacity: 1;
+  }
+
+  .gallery__wrapper--vertical-masonry.flickity-enabled & {
+    @include respond-to("medium-down") {
+      margin-right: calc(#{$gutter} / 2);
+      margin-left: calc(#{$gutter} / 2);
+    }
+  }
+
+  .has-no-side-gutter & {
+    margin: 0;
+  }
+
+  .has-gutter-enabled & {
+    @include respond-to("medium-down") {
+      margin-bottom: 20px;
+    }
+  }
+
+  .gallery__wrapper:not(.flickity-enabled) & {
+    &:last-child {
+      @include respond-to("medium-down") {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .flickity-enabled.gallery__wrapper--page-dots-false & {
+    @include respond-to("medium-down") {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gallery__item-wrap {
+  .has-image-crop & {
+    height: 100%;
+  }
+
+  .has-image-crop--mobile-true & {
+    @include respond-to("medium-down") {
+      height: 100%;
+    }
+  }
+}
+
+.gallery-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 20px;
+  }
+}

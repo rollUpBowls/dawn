@@ -1,0 +1,10 @@
+{
+  "product": {
+    "variants": {
+      "choose_variant": "Choose a variant",
+      "choose_option": "Choose a {{ option }}",
+      "chosen_option_html": "{{ option }}: <span>{{ value }}</span>",
+      "unavailable": "Unavailable"
+    }
+  }
+}

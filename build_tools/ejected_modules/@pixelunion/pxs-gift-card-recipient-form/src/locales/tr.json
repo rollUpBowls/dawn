@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "Bunu hediye olarak göndermek istiyorum",
+      "email_label": "Alıcı e-posta adresi",
+      "email_placeholder": "Alıcı e-posta adresi *",
+      "error_message": "E-posta geçerli değil",
+      "name_label": "Alıcı adı (isteğe bağlı)",
+      "name_placeholder": "Alıcı adı (isteğe bağlı)",
+      "message_label": "Mesaj (isteğe bağlı)",
+      "message_placeholder": "Mesaj (isteğe bağlı)",
+      "max_characters": "Maksimum {{ max_characters }} karakter",
+      "send_on_label": "Şu tarihte gönder (isteğe bağlı)",
+      "send_on_placeholder": "YYYY-AA-GG"
+    }
+  }
+}

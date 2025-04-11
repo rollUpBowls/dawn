@@ -1,0 +1,87 @@
+@import "../../../build_tools/ejected_modules/@pixelunion/pxs-gift-card-recipient-form/src/styles/recipient-form.scss";
+
+.recipient-disclosure {
+  #{"--recipient-disclosure-top-margin"}: 0.75rem;
+  #{"--recipient-disclosure-bottom-margin"}: 0.5rem;
+  #{"--recipient-form-label-margin"}: 0.75rem;
+  #{"--recipient-form-field-gap"}: 1.25rem;
+  #{"--recipient-form-label-gap"}: 0.5rem;
+  #{"--recipient-form-checkbox-width"}: 14px;
+  #{"--recipient-form-checkbox-border-color"}: $input-border-color;
+  #{"--recipient-form-error-color"}: #ea1a1a;
+
+  width: 100%;
+
+  .product_form--has-quantity-box-true & {
+    #{"--recipient-disclosure-top-margin"}: 1.25rem;
+
+    @include respond-to("medium-down") {
+      #{"--recipient-disclosure-top-margin"}: 1rem;
+      #{"--recipient-disclosure-bottom-margin"}: 0.25rem;
+    }
+  }
+
+  .smart-payment-button--false.product_form--dropdown.product_form--has-quantity-box-true & {
+    #{"--recipient-disclosure-top-margin"}: 0;
+    #{"--recipient-disclosure-bottom-margin"}: 0.75rem;
+
+    @include respond-to("medium-down") {
+      #{"--recipient-disclosure-bottom-margin"}: 0.5rem;
+    }
+  }
+
+  .smart-payment-button--false.product_form--radio.product_form--has-quantity-box-true & {
+    #{"--recipient-disclosure-top-margin"}: 0.75rem;
+
+    @include respond-to("medium-down") {
+      #{"--recipient-disclosure-top-margin"}: 0.5rem;
+    }
+  }
+
+  .product_form--dropdown.product_form--has-quantity-box-false & {
+    #{"--recipient-disclosure-top-margin"}: 0;
+    #{"--recipient-disclosure-bottom-margin"}: 0.75rem;
+
+    @include respond-to("medium-down") {
+      #{"--recipient-disclosure-bottom-margin"}: 0.25rem;
+    }
+  }
+}
+
+.recipient-disclosure__summary {
+  box-sizing: border-box;
+}
+
+.recipient-disclosure__checkbox-label {
+  svg {
+    background: liquid-object("settings.link_color");
+    stroke: liquid-object("settings.shop_bg_color");
+    stroke-width: 2;
+  }
+}
+
+.recipient-disclosure__checkbox-label-text {
+  padding: 0.25rem 0;
+
+  @include respond-to("medium-down") {
+    padding: 0.75rem 0;
+  }
+}
+
+.recipient-form {
+  margin-top: 0.75rem;
+
+  @include respond-to("medium-down") {
+    margin: 0.5rem 0;
+  }
+}
+
+.recipient-form__input--email {
+  .recipient-form--has-errors & {
+    border-color: var(--recipient-form-error-color);
+  }
+}
+
+.recipient-form__error-message {
+  color: var(--recipient-form-error-color);
+}

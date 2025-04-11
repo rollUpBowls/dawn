@@ -1,0 +1,202 @@
+/* # Generic
+================================================== */
+
+$body-background-color: liquid-object("settings.shop_bg_color") !default;
+$body-size: liquid-object("settings.regular_font_size | append: 'px'") !default;
+$body-rendering: optimizeLegibility !default;
+$body-family: liquid-object("settings.regular__font.family"), liquid-object("settings.regular__font.fallback_families") !default;
+$body-color: $text !default;
+$body-weight: $weight-normal !default;
+$body-line-height: 1.5 !default;
+
+$code-family: $family-code !default;
+$code-padding: 0.25em 0.5em 0.25em !default;
+$code-weight: normal !default;
+$code-size: 0.875em !default;
+
+$hr-background-color: $background !default;
+$hr-height: 2px !default;
+$hr-margin: 1.5rem 0 !default;
+
+$strong-color: $text-strong !default;
+$strong-weight: $weight-bold !default;
+
+$table-striped-row-even-background-color: $white-bis !default;
+
+html {
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: $body-size;
+  background-color: $body-background-color;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: $body-rendering;
+  text-size-adjust: 100%;
+  backface-visibility: hidden; // Used to correct webkit transform bug
+}
+
+main {
+  min-height: 30vh; // Make sure header and footer aren't stuck together
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+main,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $body-family;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: $code-family;
+}
+
+// Inline
+
+a {
+  color: $link;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color $transition-speed ease-in-out;
+
+  strong {
+    color: currentColor;
+  }
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+code {
+  padding: $code-padding;
+  font-size: $code-size;
+  font-weight: $code-weight;
+  color: $code;
+  background-color: $code-background;
+}
+
+hr {
+  display: block;
+  height: $hr-height;
+  margin: $hr-margin;
+  background-color: $hr-background-color;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+small {
+  font-size: $size-7;
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  font-weight: $strong-weight;
+}
+
+// Block
+
+fieldset {
+  border: none;
+}
+
+pre {
+  @include overflow-touch;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  font-size: $size-7;
+  color: $pre;
+  word-wrap: normal;
+  white-space: pre;
+  background-color: $pre-background;
+
+  code {
+    padding: 0;
+    font-size: 1em;
+    color: currentColor;
+    background-color: transparent;
+  }
+}
+
+table {
+  td,
+  th {
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    color: $text-strong;
+  }
+}
+
+.table.is-bordered td,
+.table.is-bordered th {
+  padding: 5px;
+  border: 1px solid $border;
+}
+
+.table.is-striped {
+  tbody {
+    tr:not(.is-selected) {
+      &:nth-child(even) {
+        background-color: $table-striped-row-even-background-color;
+      }
+    }
+  }
+}
+
+.noscript {
+  display: none;
+}
+
+.site-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 350ms;
+
+  &.site-overlay--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  [data-site-header-layout="search_focus"] &,
+  [data-site-header-layout="vertical"] & {
+    transition-duration: 300ms;
+  }
+}

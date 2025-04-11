@@ -1,0 +1,138 @@
+{
+  "name": "@pixelunion/shopify-structured-data",
+  "version": "1.2.5",
+  "author": "Pixel Union",
+  "license": "UNLICENSED",
+  "repository": "github:pixelunion/shopify-structured-data",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "paskitPlugin": {
+    "build": [
+      {
+        "action": "concat",
+        "input": [
+          "source/snippets/structured-data-article.liquid",
+          "source/snippets/structured-data-breadcrumbs.liquid",
+          "source/snippets/structured-data-product.liquid",
+          "source/snippets/structured-data-website.liquid"
+        ],
+        "output": "snippets/structured-data.liquid"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/en.default.json",
+        "output": "locales/en.default.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/cs.json",
+        "output": "locales/cs.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/da.json",
+        "output": "locales/da.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/de.json",
+        "output": "locales/de.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/es.json",
+        "output": "locales/es.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/fi.json",
+        "output": "locales/fi.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/fr.json",
+        "output": "locales/fr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/hi.json",
+        "output": "locales/hi.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/it.json",
+        "output": "locales/it.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/ja.json",
+        "output": "locales/ja.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/ko.json",
+        "output": "locales/ko.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/ms.json",
+        "output": "locales/ms.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/nl.json",
+        "output": "locales/nl.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/no.json",
+        "output": "locales/no.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/pl.json",
+        "output": "locales/pl.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/pt-BR.json",
+        "output": "locales/pt-BR.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/pt-PT.json",
+        "output": "locales/pt-PT.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/sv.json",
+        "output": "locales/sv.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/th.json",
+        "output": "locales/th.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/tr.json",
+        "output": "locales/tr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/zh-CN.json",
+        "output": "locales/zh-CN.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "source/locales/zh-TW.json",
+        "output": "locales/zh-TW.json"
+      }
+    ]
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/shopify-structured-data/1.2.5/6ca3a2dd1aca9afec78ecaabd94941324557ec89"
+,"_integrity": "sha512-FTCPh3n2KR3NJ+++KgYEeVYjvruV/AvZ2yo79X+BRG9GLFvVrerX+u533rcd+RmCq/Tw1e4XYKtILwsxuUnScA=="
+,"_from": "@pixelunion/shopify-structured-data@1.2.5"
+}

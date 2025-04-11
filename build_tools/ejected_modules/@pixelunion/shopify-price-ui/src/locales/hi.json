@@ -1,0 +1,17 @@
+{
+  "product": {
+    "price": {
+      "range_html": "{{ price_min }} - {{ price_max }}",
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+    },
+    "badge": {
+      "sale_percentage_range_html": "{{ price_percent }}% तक बचाएं",
+      "sale_percentage_single_html": "{{ price_percent }}% बचाओ",
+      "sale_money_range_html": "{{ price }} तक बचाएं",
+      "sale_money_single_html": "{{ price }} सहेजें",
+      "sold_out": "बिक गया",
+      "sale": "बिक्री",
+      "in_stock": "स्टॉक में"
+    }
+  }
+}

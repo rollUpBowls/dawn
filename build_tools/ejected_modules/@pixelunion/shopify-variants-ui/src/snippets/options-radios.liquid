@@ -1,0 +1,122 @@
+{% comment %}
+  Display variant options for a product
+
+  @param selected_variant
+{% endcomment %}
+
+<fieldset
+  class="
+    {% unless show_swatches %}
+      options-selection__radios
+    {% else %}
+      options-selection__swatches
+      options-selection__swatches--{{ swatches_option_style }}
+    {% endunless %}
+  "
+>
+  <legend class="options-selection__option-header">
+    <span
+      class="options-selection__option-name"
+      data-variant-option-name="{{ 'product.variants.chosen_option_html' | t: option: option.name, value: option.selected_value | escape }}"
+      data-variant-option-choose-name="{{ 'product.variants.choose_option' | t: option: option.name }}"
+    >
+      {% if selected_variant %}
+        {{ 'product.variants.chosen_option_html' | t: option: option.name, value: option.selected_value }}
+      {% else %}
+        {{ 'product.variants.choose_option' | t: option: option.name }}
+      {% endif %}
+    </span>
+  </legend>
+
+  <div
+    class="options-selection__option-values"
+    data-variant-option
+    data-variant-option-index="{{ option_index }}"
+    data-variant-option-chosen-value="{% if selected_variant %}{{ option.selected_value }}{% else %}false{% endif %}"
+  >
+    {% for value in option.values %}
+      <div
+        class="
+          options-selection__option-value
+          {% if selected_variant and option.selected_value == value %}options-selection__option-value--selected{% endif %}
+        "
+        data-variant-option-value-wrapper
+      >
+        <label
+          class="
+            options-selection__option-value-label
+          "
+        >
+          <input
+            class="
+              options-selection__option-value-input
+            "
+            type="radio"
+            name="{{ option.name | url_encode }}"
+            value="{{ value | escape }}"
+            tabindex="0"
+            aria-label="{{ value | escape }}"
+            {% if selected_variant and option.selected_value == value %}checked{% endif %}
+            data-variant-option-value
+            data-variant-option-value-index="{{ option_index }}"
+          >
+
+          <span
+            class="
+              {% unless show_swatches %}
+                options-selection__option-value-name
+              {% else %}
+                options-selection__option-swatch-wrapper
+              {% endunless %}
+            "
+            tabindex="-1"
+            {% if show_swatches %}
+              data-swatch-tooltip="{{ value | escape }}"
+              style="--swatch-color: {{ value | escape | remove: ' ' }}"
+            {% endif %}
+          >
+            {% unless show_swatches %}
+              {{ value }}
+            {% else %}
+              {% assign use_variant_images = false %}
+              {% if swatches_option_style == 'variant_image' %}
+                {% assign use_variant_images = true %}
+              {% endif %}
+              {% assign use_aspect_ratio = false %}
+              {% if swatches_shape == 'square' %}
+                {% assign use_aspect_ratio = true %}
+              {% endif %}
+              {% capture swatch_styles %}
+                {% assign color_name = value %}
+                {% assign use_variant_images = use_variant_images %}
+                {% assign swatch_product = product %}
+                {% assign swatch_option_key = swatch_option_key %}
+                {% assign swatch_size = swatch_size %}
+                {% assign use_aspect_ratio = use_aspect_ratio %}
+                {% inject '@pixelunion/shopify-variants-ui/options-radios-swatch-styles' %}
+              {% endcapture %}
+              <div
+                class="options-selection__option-swatch"
+                {% for variant in swatch_product.variants %}
+                  {% assign option_value_downcased = variant[swatch_option_key] | downcase %}
+                  {% if option_value_downcased == swatch_search_color %}
+                    {% if variant.image != blank %}
+                      data-variant-image
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+                style="{{ swatch_styles | split: '/* variables */' | last | remove: '/* variables */' }}"
+              >
+                <div
+                  class="options-selection__option-swatch-inner"
+                  style="{{ swatch_styles | split: '/* variables */' | first }}"
+                >
+                </div>
+              </div>
+            {% endunless %}
+          </span>
+        </label>
+      </div>
+    {% endfor %}
+  </div>
+</fieldset>

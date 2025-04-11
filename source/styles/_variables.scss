@@ -1,0 +1,324 @@
+/* # Variables
+================================================== */
+
+$site-max-width: 1200px;
+$site-width: 95%;
+$transition-default: all 0.3s ease;
+
+$gutter: 20px;
+$half-gutter: $gutter * 0.5;
+
+// Responsiveness
+
+$grid-small: 480px;
+$grid-medium: 798px;
+$grid-large: 1024px;
+$grid-widescreen: 1400px;
+
+$small: 'small';
+$small-down: 'small-down';
+$small-up: 'small-up';
+$medium: 'medium';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$widescreen-up: 'widescreen-up';
+$widescreen-down: 'widescreen-down';
+
+// The `$breakpoints` list is used to build our media queries.
+// You can use these in the media-query mixin.
+$breakpoints: (
+  $small-down '(max-width: #{$grid-small})',
+  $small '(min-width: #{$grid-small + 1}) and (max-width: #{$grid-medium})',
+  $small-up '(min-width: #{$grid-small + 1})',
+  $medium-down '(max-width: #{$grid-medium})',
+  $medium '(min-width: #{$grid-medium + 1}) and (max-width: #{$grid-large})',
+  $medium-up '(min-width: #{$grid-medium + 1})',
+  $large-down '(max-width: #{$grid-large})',
+  $large '(min-width: #{$grid-large + 1}) and (max-width: #{$grid-widescreen})',
+  $large-up '(min-width: #{$grid-large + 1})',
+  $widescreen-down '(max-width: #{$grid-widescreen})',
+  $widescreen-up '(min-width: #{$grid-widescreen + 1})'
+);
+
+// Fonts
+$heading-font-size-liquid-reference: "settings.heading_size";
+$nav-font-size: liquid-object("settings.nav_font_size | append: 'px'");
+$footer-font-size: liquid-object("settings.footer_font_size");
+
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+
+$family-primary: $family-sans-serif !default;
+$family-secondary: $family-sans-serif !default;
+$family-code: $family-monospace !default;
+
+$size-1: 3rem !default;
+$size-2: 2.5rem !default;
+$size-3: 2rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 0.875rem !default;
+$size-8: 0.75rem !default;
+$size-9: 0.5rem !default;
+
+$size-very-small: $size-9 !default;
+$size-small: $size-8 !default;
+$size-normal: $size-6 !default;
+$size-medium: $size-5 !default;
+$size-large: $size-4 !default;
+
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-medium: 500 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 700 !default;
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 $size-8 !default;
+
+// Colors
+
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(48, 100%, 67%) !default;
+$green: hsl(141, 71%, 48%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(204, 86%, 53%) !default;
+$blue: hsl(217, 71%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 100%, 61%) !default;
+
+// General colors
+
+/*
+  {% assign color_background = settings.shop_bg_color %}
+*/
+
+$background: liquid-object("color_background");
+
+/*
+  {% assign border_color = settings.border_color %}
+*/
+
+$border: liquid-object("border_color") !default;
+$border-hover: liquid-object("border_color | color_lighten: 50") !default;
+
+// Text colors
+
+/*
+  {% liquid
+    assign text = settings.regular_color
+    assign text_invert = '#ffffff'
+
+    assign lightness = text | color_extract: 'lightness'
+
+    if lightness > 50
+      assign text_invert = settings.regular_color
+    endif
+  %}
+*/
+
+$text: liquid-object("text") !default;
+$text-light-opacity: liquid-object("text | color_modify: 'alpha', 0.3");
+$text-invert: liquid-object("text_invert") !default;
+$text-light: $grey !default;
+$text-strong: $grey-darker !default;
+
+// Code colors
+
+$code: $red !default;
+$code-background: $background !default;
+
+$pre: $text !default;
+$pre-background: $background !default;
+
+// Link colors
+
+/*
+  {% liquid
+    assign link = settings.link_color
+    assign link_invert = '#ffffff'
+
+    assign lightness = link | color_extract: 'lightness'
+
+    if lightness > 50
+      assign link_invert = settings.regular_color
+    endif
+  %}
+*/
+
+$link: liquid-object("link") !default;
+$link-invert: liquid-object("link_invert") !default;
+$link-visited: liquid-object("link") !default;
+
+$link-hover: liquid-object("settings.link_hover_color") !default;
+$link-hover-border: liquid-object("settings.link_hover_color") !default;
+
+$link-focus: liquid-object("settings.link_hover_color") !default;
+$link-focus-border: liquid-object("settings.link_hover_color") !default;
+
+$link-active: liquid-object("settings.link_hover_color") !default;
+$link-active-border: liquid-object("settings.link_hover_color") !default;
+
+$tag-solid-light: liquid-object("settings.link_color | color_modify: 'alpha', 0.10") !default;
+$tag-solid-dark: liquid-object("settings.link_color | color_modify: 'alpha', 1") !default;
+
+// Header colors
+
+$header-logo-text-color: liquid-object("settings.logo_text");
+$header-link: liquid-object("settings.header_link_color");
+$header-link-hover: liquid-object("settings.header_link_hover_color");
+$header-background: liquid-object("settings.header_background");
+
+// Thumbnails
+
+/*
+  {% liquid
+    assign sale_sticker_color = settings.banner_sale
+    assign sale_sticker_color_text = '#ffffff'
+
+    assign lightness = sale_sticker_color | color_extract: 'lightness'
+
+    if lightness > 50
+      assign sale_sticker_color_text = settings.regular_color
+    endif
+  %}
+*/
+
+$sale-sticker-color: liquid-object("sale_sticker_color");
+$sale-sticker-color-text: liquid-object("sale_sticker_color_text");
+
+/*
+  {% liquid
+    assign new_sticker_color = settings.banner_new
+    assign new_sticker_color_text = '#ffffff'
+
+    assign lightness = new_sticker_color | color_extract: 'lightness'
+
+    if lightness > 50
+      assign new_sticker_color_text = settings.regular_color
+    endif
+  %}
+*/
+
+$new-sticker-color: liquid-object("new_sticker_color");
+$new-sticker-color-text: liquid-object("new_sticker_color_text");
+
+/*
+  {% liquid
+    assign bestseller_sticker_color = settings.banner_bestseller
+    assign bestseller_sticker_color_text = '#ffffff'
+
+    assign lightness = bestseller_sticker_color | color_extract: 'lightness'
+
+    if lightness > 50
+      assign bestseller_sticker_color_text = settings.regular_color
+    endif
+  %}
+*/
+
+$bestseller-sticker-color: liquid-object("bestseller_sticker_color");
+$bestseller-sticker-color-text: liquid-object("bestseller_sticker_color_text");
+
+/*
+  {% liquid
+    assign comingsoon_sticker_color = settings.banner_comingsoon
+    assign comingsoon_sticker_color_text = '#ffffff'
+
+    assign lightness = comingsoon_sticker_color | color_extract: 'lightness'
+
+    if lightness > 50
+      assign comingsoon_sticker_color_text = settings.regular_color
+    endif
+  %}
+*/
+
+$comingsoon-sticker-color: liquid-object("comingsoon_sticker_color");
+$comingsoon-sticker-color-text: liquid-object("comingsoon_sticker_color_text");
+
+/*
+  {% liquid
+    assign staffpick_sticker_color = settings.banner_staffpick
+    assign staffpick_sticker_color_text = '#ffffff'
+
+    assign lightness = staffpick_sticker_color | color_extract: 'lightness'
+
+    if lightness > 50
+      assign staffpick_sticker_color_text = settings.regular_color
+    endif
+  %}
+*/
+
+$staffpick-sticker-color: liquid-object("staffpick_sticker_color");
+$staffpick-sticker-color-text: liquid-object("staffpick_sticker_color_text");
+
+/*
+  {% liquid
+    assign preorder_sticker_color = settings.banner_preorder
+    assign preorder_sticker_color_text = '#ffffff'
+
+    assign lightness = preorder_sticker_color | color_extract: 'lightness'
+
+    if lightness > 50
+      assign preorder_sticker_color_text = settings.regular_color
+    endif
+  %}
+*/
+
+$preorder-sticker-color: liquid-object("preorder_sticker_color");
+$preorder-sticker-color-text: liquid-object("preorder_sticker_color_text");
+
+$thumbnail-text-alignment: liquid-object("settings.thumbnail_text_alignment");
+
+// Transition effect variables
+
+$transition-speed: 0.3s;
+$transition-zoom: scale(1.1);
+
+// Miscellaneous
+
+$easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-large: 6px !default;
+$radius-rounded: 290486px !default;
+$speed: 86ms !default;
+$truncation-fade: linear-gradient(to bottom, liquid-object("settings.shop_bg_color | color_to_rgb | color_modify: 'alpha', 0"), liquid-object("settings.shop_bg_color | color_to_rgb | color_modify: 'alpha', 1"));
+
+// Box Shadows
+$overlay-box-shadow: 0 0 0 999em rgba(0,0,0,0.8);
+
+//Menu dropdowns
+
+$drop-down-menu-heading-font-size: liquid-object("settings.dropdown_heading_font_size | append: 'px'") !default;
+$drop-down-menu-font-size: liquid-object("settings.dropdown_font_size | append: 'px'") !default;
+$drop-down-menu-font-style: liquid-object("settings.dropdown_font_style") !default;
+$drop-down-menu-hover-color: liquid-object("settings.dropdown_link_hover_color") !default;
+
+/*
+  {% assign drop_down_menu_active_color = settings.dropdown_link_color %}
+*/
+
+$drop-down-menu-active-color: liquid-object("drop_down_menu_active_color") !default;
+$drop-down-menu-letter-spacing: liquid-object("settings.dropdown_letter_spacing | append: 'px'") !default;
+
+// Product ratings
+
+$color-product-review-star: liquid-object("settings.review_star");

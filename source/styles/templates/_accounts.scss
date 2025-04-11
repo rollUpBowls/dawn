@@ -1,0 +1,61 @@
+/* # Accounts
+================================================== */
+
+.register__image img,
+.login__image img {
+  width: 100%;
+}
+
+.register__form img,
+.login__form img {
+  max-width: 200px;
+  margin: 0;
+}
+
+.or {
+  margin-left: 10px;
+}
+
+// Recover
+
+.login__recover {
+  display: none;
+}
+
+.recover-note {
+  margin: 0.75rem 0;
+}
+
+.action_bottom .button,
+.recover-options .button {
+  margin-right: 5px;
+}
+
+.order__unit-price {
+  font-size: $size-7;
+}
+
+// Addresses
+
+.address-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address-table__address {
+  margin-bottom: 1.5rem;
+
+  @include respond-to('small-down') {
+    &.column {
+      margin: 1.5rem 0 0;
+    }
+  }
+}
+
+.address-table__title {
+  font-weight: bold;
+}
+
+.address-table__details {
+  margin: 0.5rem 0;
+}

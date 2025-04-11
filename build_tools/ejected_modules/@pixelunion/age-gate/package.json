@@ -1,0 +1,130 @@
+{
+  "name": "@pixelunion/age-gate",
+  "version": "1.1.0",
+  "description": "An age gate implementation for Shopify themes.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "umd": "dist/index.umd.js",
+  "umdName": "AgeGate",
+  "scripts": {
+    "build": "rollup --config",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelunion/shared-sections.git",
+    "directory": "age-gate"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "Pixel Union",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "isbot": "^3.6.3",
+    "scroll-lock": "^2.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "^7.8.7",
+    "@pixelunion/paskit": "^3.3.0",
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "7.1.1",
+    "rollup": "1.31.1",
+    "rollup-plugin-babel": "4.3.3"
+  },
+  "paskitPlugin": {
+    "build": [
+      {
+        "action": "copy",
+        "input": "src/liquid/age-gate.liquid",
+        "output": "snippets/age-gate.liquid"
+      },
+      {
+        "action": "copy",
+        "input": "src/liquid/page-age-gate.liquid",
+        "output": "sections/age-gate.liquid"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/cs.json",
+        "output": "locales/cs.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.json",
+        "output": "locales/de.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.schema.json",
+        "output": "locales/de.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.json",
+        "output": "locales/en.default.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.schema.json",
+        "output": "locales/en.default.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.json",
+        "output": "locales/es.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.schema.json",
+        "output": "locales/es.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.json",
+        "output": "locales/fr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.schema.json",
+        "output": "locales/fr.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/hi.json",
+        "output": "locales/hi.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/it.json",
+        "output": "locales/it.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/it.schema.json",
+        "output": "locales/it.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/ja.json",
+        "output": "locales/ja.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/nl.json",
+        "output": "locales/nl.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/tr.json",
+        "output": "locales/tr.json"
+      }
+    ]
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/age-gate/1.1.0/696322b89255b0408f67e897e28608566df8b305"
+,"_integrity": "sha512-e3wXRx7nLhabugQIhFWFlV35F1mljhLAPGwhNp1Z4lTI8cbHjWWsw5GJTsVNHKpSt1/AqXRzNnFP0NMfTrRQjw=="
+,"_from": "@pixelunion/age-gate@1.1.0"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@pixelunion/rimg-shopify",
+  "version": "2.7.1",
+  "description": "rimg plugin for Shopify themes",
+  "author": "Pixel Union",
+  "license": "UNLICENSED",
+  "repository": "github:pixelunion/rimg-shopify",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "start": "onchange 'src/**/*.js' -- npm run build",
+    "build": "node build/rollup.js",
+    "test": "jest --verbose",
+    "prepare": "npm run build"
+  },
+  "paskitPlugin": {
+    "build": [
+      {
+        "action": "copy",
+        "input": "liquid/rimg.liquid",
+        "output": "snippets/rimg.liquid"
+      }
+    ]
+  },
+  "peerDependencies": {
+    "@pixelunion/rimg": ">= 2.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "acorn": "7.1.0",
+    "babel-preset-jest": "^24.9.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.6.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "jest": "^24.9.0",
+    "jsdom": "^13.0.0",
+    "liquidjs": "^6.1.1",
+    "onchange": "^3.3.0",
+    "rollup": "^1.27.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "uglify-js": "^3.6.9"
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/rimg-shopify/2.7.1/6a5322bbf04a81379d5fcc5554cfe0cdbfa4be15"
+,"_integrity": "sha512-BlUMKNmhs+BkV7N5B29iSUnHVXLyrvoUePEyXnj/yuQDDF7GOWebOsP0wIZ8IdymUPzQidsmrqWM82g4HQGhqA=="
+,"_from": "@pixelunion/rimg-shopify@2.7.1"
+}

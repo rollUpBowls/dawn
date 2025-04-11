@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "장바구니",
+      "collections": "컬렉션",
+      "page": "페이지 {{ page }}",
+      "products": "제작품",
+      "search": "검색",
+      "tags_html": "태그 \"{{ tags }}\""
+    }
+  }
+}

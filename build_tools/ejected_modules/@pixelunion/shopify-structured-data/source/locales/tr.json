@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Sepet",
+      "collections": "Koleksiyonlar",
+      "page": "Sayfa {{ page }}",
+      "products": "Urün",
+      "search": "Ara",
+      "tags_html": "Etiketlendi \"{{ tags }}\""
+    }
+  }
+}

@@ -1,7 +1,9 @@
 {
+  "name": "Account",
   "sections": {
     "main": {
-      "type": "main-account"
+      "type": "account-details",
+      "settings": {}
     }
   },
   "order": [

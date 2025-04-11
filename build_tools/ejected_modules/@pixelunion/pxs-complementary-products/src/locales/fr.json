@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "complementary_product_block": {
+      "from": "De",
+      "now": "À présent",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "view_details": "Voir le produit"
+    }
+  }
+}

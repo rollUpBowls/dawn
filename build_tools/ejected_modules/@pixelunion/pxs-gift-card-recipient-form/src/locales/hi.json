@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "मुझे इसे उपहार के रूप में भेजना है",
+      "email_label": "प्राप्तकर्ता ईमेल",
+      "email_placeholder": "प्राप्तकर्ता ईमेल *",
+      "error_message": "ईमेल मान्य नहीं है",
+      "name_label": "प्राप्तकर्ता का नाम (वैकल्पिक)",
+      "name_placeholder": "प्राप्तकर्ता का नाम (वैकल्पिक)",
+      "message_label": "संदेश (वैकल्पिक)",
+      "message_placeholder": "संदेश (वैकल्पिक)",
+      "max_characters": "{{ max_characters }} वर्णों की अधिकतम सीमा",
+      "send_on_label": "भेजें (वैकल्पिक) तिथि पर",
+      "send_on_placeholder": "YYYY-MM-DD"
+    }
+  }
+}

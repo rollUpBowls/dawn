@@ -1,25 +1,118 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "page-content__main",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "show_heading": true,
+        "heading_alignment": "left",
+        "width": "standard",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "css_class": "",
+        "custom_css": ""
       }
     },
-    "form": {
-      "type": "contact-form",
+    "contact": {
+      "type": "index__contact-form",
+      "blocks": {
+        "819ccdac-5c74-43bc-b47b-4b11cc82382a": {
+          "type": "textfield",
+          "settings": {
+            "label": "Name",
+            "required": true
+          }
+        },
+        "a8554837-a77c-4c87-8398-15cb200375c5": {
+          "type": "email",
+          "settings": {
+            "label": "Email"
+          }
+        },
+        "433fc484-88c1-4ec8-8a8d-fc063586f91e": {
+          "type": "textarea",
+          "settings": {
+            "label": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "819ccdac-5c74-43bc-b47b-4b11cc82382a",
+        "a8554837-a77c-4c87-8398-15cb200375c5",
+        "433fc484-88c1-4ec8-8a8d-fc063586f91e"
+      ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "content_image": "shopify://shop_images/emporium__page--contact-01.png",
+        "title": "Get in touch!",
+        "content_text": "<p>We’re here to answer any questions or comments you may have! Fill out our contact form and we will try our best to get back to you in 24 hours or less. You can also take a look at our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> to see if your question already has an answer!</p>",
+        "social_enable": true,
+        "text_alignment": "center",
+        "background": "#a32668",
+        "text_color": "#ffffff",
+        "form_position": "right",
+        "width": "standard",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "animation": "fadeIn",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "163069459185530e00": {
+      "type": "index__map",
+      "settings": {
+        "map_address": "Seattle",
+        "map_height": 400,
+        "zoom_level": 14,
+        "api_key": "",
+        "show_pin": true,
+        "map_style": "default",
+        "width": "wide",
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "fadeIn",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "163069535438a78b63": {
+      "type": "index__rich-text",
+      "settings": {
+        "title": "Visit us",
+        "heading_font": "mundo_sans_n5",
+        "heading_color": "rgba(0,0,0,0)",
+        "heading_alignment": "center",
+        "heading_size": 30,
+        "text": "<p>Want to make sure you won't have to pivot your couch up a staircase? Or that the pillow covers match your blankets? Stop by the shop to see us and check out our products in person! </p><p>Mon-Fri: 9:00am - 6:00pm<br/>Sat: 10:00am - 3:00pm<br/>Sun: Closed</p>",
+        "text_font": "mundo_sans_n4",
+        "text_color": "rgba(0,0,0,0)",
+        "text_alignment": "center",
+        "text_size": 16,
+        "columns": 1,
+        "button_label": "",
+        "button_link": "",
+        "button_alignment": "center",
+        "button_style": "button--primary",
+        "background": "rgba(0,0,0,0)",
+        "gradient": "rgba(0,0,0,0)",
+        "gradient_rotation": 180,
+        "width": "half",
+        "padding_top": 20,
+        "padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "fadeIn",
+        "css_class": "",
+        "custom_css": ""
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "contact",
+    "163069459185530e00",
+    "163069535438a78b63"
   ]
 }

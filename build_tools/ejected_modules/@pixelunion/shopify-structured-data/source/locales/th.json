@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "รถเข็น",
+      "collections": "คอลเลกชัน",
+      "page": "เพจ {{ page }}",
+      "products": "สินค้า",
+      "search": "ค้นหา",
+      "tags_html": "ติดป้าย \"{{ tags }}\""
+    }
+  }
+}

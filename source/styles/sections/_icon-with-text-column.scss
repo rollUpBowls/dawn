@@ -1,0 +1,48 @@
+/* # Icon with text column
+================================================== */
+
+.icon-with-text-column {
+  .icon {
+    margin-bottom: 20px;
+
+    @include respond-to("medium-down") {
+      margin: 20px 0 0;
+    }
+
+    &.is-small {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+
+    &.is-medium {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+
+    &.is-large {
+      width: 5.4rem;
+      height: 5.4rem;
+    }
+
+    &.is--mobile-small {
+      @include respond-to("medium-down") {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+    }
+
+    &.is--mobile-medium {
+      @include respond-to("medium-down") {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
+
+    &.is--mobile-large {
+      @include respond-to("medium-down") {
+        width: 5.4rem;
+        height: 5.4rem;
+      }
+    }
+  }
+}

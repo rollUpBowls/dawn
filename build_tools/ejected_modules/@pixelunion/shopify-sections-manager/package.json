@@ -1,0 +1,31 @@
+{
+  "name": "@pixelunion/shopify-sections-manager",
+  "version": "1.1.0",
+  "author": "Pixel Union",
+  "license": "UNLICENSED",
+  "repository": "github:pixelunion/shopify-sections-manager",
+  "umd": "dist/shopify-sections-manager.umd.js",
+  "umdName": "ShopifySectionsManager",
+  "main": "dist/shopify-sections-manager.js",
+  "module": "dist/shopify-sections-manager.es.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "node rollup.js",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.24.0",
+    "uglify-js": "^3.3.10"
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/shopify-sections-manager/1.1.0/468021a2b4f0b88fbba5f31d756e38d8734731bb"
+,"_integrity": "sha512-mL1uBxgiGhESxQgH+y3Tsxi8GmZA+qTxi9YXVP7p6uWcoT+6PDvM9XTdUEDmUdK3hGOWU5HUw2aXh/PF+3EcDw=="
+,"_from": "@pixelunion/shopify-sections-manager@1.1.0"
+}

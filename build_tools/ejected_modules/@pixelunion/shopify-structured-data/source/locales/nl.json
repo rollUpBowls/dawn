@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Winkelwagen",
+      "collections": "Collecties",
+      "page": "Pagina {{ page }}",
+      "products": "Producten",
+      "search": "Zoeken",
+      "tags_html": "Met etiket \"{{ tags }}\""
+    }
+  }
+}

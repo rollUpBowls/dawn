@@ -1,210 +1,272 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "16394170664118cf19": {
+      "type": "index__slideshow-classic",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "1639417066aa16c460-0": {
+          "type": "image",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "link": "",
+            "image": "shopify://shop_images/flex-emporium1.jpg",
+            "pretext": "",
+            "title": "Embrace your Space",
+            "subtitle": "<p>Fill your home with unique finds</p>",
+            "pretext_color": "#000000",
+            "heading_color": "#a32668",
+            "subheading_color": "#000000",
+            "text_alignment": "center",
+            "text_horizontal_position": "center",
+            "background_color": "#ffffff",
+            "background_opacity": 77,
+            "border_color": "#ffffff",
+            "border_width": 0,
+            "text_width": 40,
+            "button_1": "New Arrivals",
+            "button_1_link": "shopify://collections/new",
+            "button_1_style": "button--primary",
+            "button_2": "",
+            "button_2_link": "",
+            "button_2_style": "button--secondary",
+            "pretext_color_mobile": "rgba(0,0,0,0)",
+            "heading_color_mobile": "rgba(0,0,0,0)",
+            "subheading_color_mobile": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "1639417066aa16c460-0"
+      ],
+      "settings": {
+        "image_transition": "slide",
+        "image_slideshow_speed": 8,
+        "show_arrows": true,
+        "show_nav_buttons": true,
+        "mobile_text_below_image": true,
+        "width": "standard",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "animation": "none",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "16394217267eadc0ee": {
+      "type": "index__featured-collection",
+      "settings": {
+        "title": "Popular Picks",
+        "collection": "editors-picks",
+        "products_per": 5,
+        "mobile_products_per_row": "2",
+        "products_limit": 15,
+        "align_height": false,
+        "collection_height": 200,
+        "collection_style": "slider",
+        "width": "wide",
+        "show_gutter": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "animation": "none",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1639421910fd42e587": {
+      "type": "index__featured-collection",
+      "settings": {
+        "title": "Comfy Throws",
+        "collection": "throws",
+        "products_per": 5,
+        "mobile_products_per_row": "2",
+        "products_limit": 15,
+        "align_height": false,
+        "collection_height": 200,
+        "collection_style": "slider",
+        "width": "wide",
+        "show_gutter": true,
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "animation": "none",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_promotions": {
+      "type": "index__featured-promotions",
+      "blocks": {
+        "featured_promotions-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/emporium__fp-01.jpg",
+            "link": "shopify://collections/editors-picks",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 50,
+            "overlay_text": "rgba(0,0,0,0)",
+            "icon_label": "heart",
+            "title": "Our Seasonal Picks",
+            "text": "<p>Our team's loved products from this season.</p>"
           }
         },
-        "text": {
+        "featured_promotions-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/emporium__fp-02.jpg",
+            "link": "shopify://collections/gifts",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 50,
+            "overlay_text": "rgba(0,0,0,0)",
+            "icon_label": "gift",
+            "title": "Gifts for Everyone",
+            "text": "<p>A curated collection of products for any homeowner.</p>"
+          }
+        },
+        "featured_promotions-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/emporium__fp-03.jpg",
+            "link": "shopify://collections/accessories",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 50,
+            "overlay_text": "rgba(0,0,0,0)",
+            "icon_label": "hanger",
+            "title": "We Love Accessories",
+            "text": "<p>Shop our favourite bags, scarves and leather goods.</p>"
+          }
+        },
+        "featured_promotions-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/emporium__fp-04.jpg",
+            "link": "shopify://collections/garden",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 50,
+            "overlay_text": "rgba(0,0,0,0)",
+            "icon_label": "leaf-2",
+            "title": "Gardening Season is Here",
+            "text": "<p>We have everything you need to plant your garden vision.</p>"
+          }
+        },
+        "cac26c81-da76-4157-9929-db93a3520c74": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/emporium__fp-05.jpg",
+            "link": "shopify://collections/all",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 50,
+            "overlay_text": "rgba(0,0,0,0)",
+            "icon_label": "house",
+            "title": "In the Mood to Browse?",
+            "text": "<p>Take a look at our entire collection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "featured_promotions-0",
+        "featured_promotions-1",
+        "featured_promotions-2",
+        "featured_promotions-3",
+        "cac26c81-da76-4157-9929-db93a3520c74"
+      ],
+      "settings": {
+        "border_radius": 0,
+        "crop_images": true,
+        "overlay_background": "#000000",
+        "overlay_background_opacity": 40,
+        "overlay_text": "#ffffff",
+        "show_border": false,
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "fadeInDown",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1639421646e22a9a5f": {
+      "type": "index__image-with-text",
+      "blocks": {
+        "1639421646de184ebd-2": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "title": "How We Source Products",
+            "heading_size": "regular",
+            "text": "<p>We spend our time carefully seeking and developing products that fit a few simple criteria, they need to be durable, quality made with a simplistic, sustainable and ethical approach.</p>",
+            "button_label": "",
+            "link": "",
+            "button_style": "button--primary",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "alignment": "left",
+            "vertical_position": "center"
           }
         },
-        "button": {
-          "type": "buttons",
+        "1639421646de184ebd-0": {
+          "type": "image",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/emporium__gallery-01.jpg",
+            "image_link": ""
           }
         },
-        "text": {
+        "218b352f-f2e4-4a3b-a50a-d2c99ee3b5a4": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "title": "Curated and Handmade",
+            "heading_size": "regular",
+            "text": "<p>We also specifically curate handmade items fabricated with care. Small run, handmade, artisan and vintage products offer a beauty that is tactile and to be celebrated. Shop our unique handmade products <a href=\"/collections/handmade\" title=\"Handmade\">here.</a></p>",
+            "button_label": "",
+            "link": "",
+            "button_style": "button--primary",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "alignment": "left",
+            "vertical_position": "center"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "1639421646de184ebd-2",
+        "1639421646de184ebd-0",
+        "218b352f-f2e4-4a3b-a50a-d2c99ee3b5a4"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 52,
+        "padding_bottom": 15,
+        "animation": "fadeInDown",
+        "css_class": "",
+        "custom_css": ""
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "16394220705104f7f0": {
+      "type": "index__newsletter",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "display_first_name": false,
+        "display_last_name": false,
+        "newsletter_title": "Get on the list",
+        "newsletter_richtext": "<p>Gain access to exclusive offers and be the first to know about new arrivals.</p>",
+        "newsletter_section_text_align": "center",
+        "background_color": "#ffffff",
+        "text_color": "#293953",
+        "image_darken": false,
+        "image_position": "right",
+        "width": "wide",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "fadeIn",
+        "css_class": "",
+        "custom_css": ""
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "16394170664118cf19",
+    "16394217267eadc0ee",
+    "1639421910fd42e587",
+    "featured_promotions",
+    "1639421646e22a9a5f",
+    "16394220705104f7f0"
   ]
 }

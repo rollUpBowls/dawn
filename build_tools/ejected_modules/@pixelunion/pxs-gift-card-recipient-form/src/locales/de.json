@@ -1,0 +1,17 @@
+{
+  "recipient": {
+    "form": {
+      "checkbox_label": "Ich möchte dies als Geschenk versenden",
+      "email_label": "E-Mail-Adresse des Empfängers",
+      "email_placeholder": "E-Mail-Adresse des Empfängers *",
+      "error_message": "Die E-Mail ist nicht gültig",
+      "name_label": "Name des Empfängers (optional)",
+      "name_placeholder": "Name des Empfängers (optional)",
+      "message_label": "Nachricht (optional)",
+      "message_placeholder": "Nachricht (optional)",
+      "max_characters": "Maximal {{ max_characters }} Zeichen",
+      "send_on_label": "Senden am (optional)",
+      "send_on_placeholder": "JJJJ-MM-TT"
+    }
+  }
+}

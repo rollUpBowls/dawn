@@ -1,0 +1,91 @@
+.recipient-disclosure {
+  #{"--recipient-disclosure-top-margin"}: 0;
+  #{"--recipient-disclosure-bottom-margin"}: 0;
+  #{"--recipient-form-field-gap"}: 0;
+  #{"--recipient-form-label-gap"}: 0;
+  #{"--recipient-form-label-margin"}: 6px;
+  #{"--recipient-form-checkbox-width"}: 12px;
+  #{"--recipient-form-checkbox-border-width"}: 1px;
+  #{"--recipient-form-checkbox-border-color"}: #000000;
+  #{"--recipient-form-checkbox-border-radius"}: 0;
+  #{"--recipient-form-checkbox-svg-color"}: inherit;
+  #{"--recipient-form-error-color"}: #cc3333;
+
+  margin: var(--recipient-disclosure-top-margin) 0 var(--recipient-disclosure-bottom-margin);
+}
+
+.recipient-disclosure__summary {
+  position: relative;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.recipient-disclosure__checkbox {
+  position: absolute;
+  appearance: none;
+  width: var(--recipient-form-checkbox-width);
+  height: var(--recipient-form-checkbox-width);
+  border: var(--recipient-form-checkbox-border-width) solid var(--recipient-form-checkbox-border-color);
+  border-radius: var(--recipient-form-checkbox-border-radius);
+
+  &:checked ~ svg {
+    visibility: visible;
+  }
+}
+
+.recipient-disclosure__checkbox-label {
+  display: flex;
+  align-items: center;
+
+  svg {
+    visibility: hidden;
+    position: absolute;
+    width: var(--recipient-form-checkbox-width);
+    height: var(--recipient-form-checkbox-width);
+    color: var(--recipient-form-checkbox-svg-color);
+  }
+}
+
+.recipient-disclosure__checkbox,
+.recipient-disclosure__checkbox-label {
+  cursor: pointer;
+}
+
+.recipient-disclosure__checkbox-label-text {
+  flex: 1;
+  margin-left: calc((var(--recipient-form-checkbox-width) + var(--recipient-form-label-margin)));
+}
+
+.recipient-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--recipient-form-field-gap);
+  margin-top: 1rem;
+}
+
+.recipient-form__input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--recipient-form-label-gap);
+}
+
+.recipient-form__input {
+  box-sizing: border-box;
+}
+
+.recipient-form__error-message {
+  display: none;
+
+  .recipient-form--has-errors & {
+    display: block;
+  }
+}
+
+.recipient-form__max-characters-message {
+  display: block;
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,132 @@
+{
+  "name": "@pixelunion/pxs-gift-card-recipient-form",
+  "version": "1.1.0",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "umd": "dist/index.umd.js",
+  "umdName": "PxsGiftCardRecipientForm",
+  "author": "Pixel Union",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:pixelunion/shared-sections.git",
+    "directory": "gift-card-recipient-form"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@pixelunion/animations": "^0.1.0",
+    "@pixelunion/events": "0.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "paskitPlugin": {
+    "build": [
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/cs.json",
+        "output": "locales/cs.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.json",
+        "output": "locales/de.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.schema.json",
+        "output": "locales/de.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.json",
+        "output": "locales/en.default.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.schema.json",
+        "output": "locales/en.default.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.json",
+        "output": "locales/es.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.schema.json",
+        "output": "locales/es.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.json",
+        "output": "locales/fr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.schema.json",
+        "output": "locales/fr.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/hi.json",
+        "output": "locales/hi.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/it.json",
+        "output": "locales/it.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/it.schema.json",
+        "output": "locales/it.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/ja.json",
+        "output": "locales/ja.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/nl.json",
+        "output": "locales/nl.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/pt-BR.json",
+        "output": "locales/pt-BR.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/tr.json",
+        "output": "locales/tr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/zh-CN.json",
+        "output": "locales/zh-CN.json"
+      },
+      {
+        "action": "copy",
+        "input": "liquid/recipient-form-disclosure-icon.liquid",
+        "output": "snippets/recipient-form-disclosure-icon.liquid"
+      }
+    ]
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/pxs-gift-card-recipient-form/1.1.0/052eb22da5ab86d99bd4dba57229a873a75c9d47"
+,"_integrity": "sha512-SaPZuCEWUV/Nc/4gKEB+u+I07GlVh4Qop1mflyZAyMyPOOnMCWd3usWVPVesl/7IZ5h/vrBhLpECSkiOxb9E9Q=="
+,"_from": "@pixelunion/pxs-gift-card-recipient-form@1.1.0"
+}

@@ -1,10 +1,16 @@
 {
   "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {}
+    },
     "main": {
-      "type": "main-404"
+      "type": "404__main",
+      "settings": {}
     }
   },
   "order": [
+    "banner",
     "main"
   ]
 }

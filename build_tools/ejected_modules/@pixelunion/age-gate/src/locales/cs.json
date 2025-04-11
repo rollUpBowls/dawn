@@ -1,0 +1,23 @@
+{
+  "age_gate": {
+    "form": {
+      "confirm": "Potvrďte věk a pokračujte do {{ shop }}",
+      "error": "Přístup obchodu je omezen na věk dospělých {{ age }} a starší.",
+      "day": "Den",
+      "month": "Měsíc",
+      "year": "Rok",
+      "january": "leden",
+      "february": "Únor",
+      "march": "březen",
+      "april": "duben",
+      "may": "Smět",
+      "june": "červen",
+      "july": "červenec",
+      "august": "srpen",
+      "september": "září",
+      "october": "říjen",
+      "november": "listopad",
+      "december": "prosinec"
+    }
+  }
+}

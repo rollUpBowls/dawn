@@ -1,0 +1,109 @@
+{
+  "name": "@pixelunion/shopify-variants-ui",
+  "version": "2.1.4",
+  "description": "Implements unstyled, but functional form elements for Shopify variant option selection.",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "umdName": "ShopifyVariantsUI",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "build": "node rollup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelunion/shopify-variants-ui.git"
+  },
+  "author": "Pixel Union",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pixelunion/shopify-variants-ui/issues"
+  },
+  "homepage": "https://github.com/pixelunion/shopify-variants-ui#readme",
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/plugin-external-helpers": "7.12.1",
+    "@babel/preset-env": "7.12.11",
+    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-node-resolve": "11.0.1",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.17.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "rollup": "2.36.1",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "paskitPlugin": {
+    "build": [
+      {
+        "action": "copy",
+        "input": "snippets/options-radios.liquid",
+        "output": "snippets/options-radios.liquid"
+      },
+      {
+        "action": "copy",
+        "input": "snippets/options-select.liquid",
+        "output": "snippets/options-select.liquid"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/cs.json",
+        "output": "locales/cs.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.json",
+        "output": "locales/de.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.json",
+        "output": "locales/en.default.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.json",
+        "output": "locales/es.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.json",
+        "output": "locales/fr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/hi.json",
+        "output": "locales/hi.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/ja.json",
+        "output": "locales/ja.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/nl.json",
+        "output": "locales/nl.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/pt-BR.json",
+        "output": "locales/pt-BR.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/tr.json",
+        "output": "locales/tr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/zh-CN.json",
+        "output": "locales/zh-CN.json"
+      }
+    ]
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/shopify-variants-ui/2.1.4/8b088a5482d08d17b68d6ab8fd520251d6fb2d23"
+,"_integrity": "sha512-3XSdDir7/KC1crCf2wvjdsFkCnXKHnOexGRalYEqKNTF54GKb6EGAZRkoZqHNcC9tAgp5Cwk+hYj4Y9CM5X2Fg=="
+,"_from": "@pixelunion/shopify-variants-ui@2.1.4"
+}

@@ -1,0 +1,40 @@
+/* # Featured collection
+================================================== */
+
+.featured-collection-section,
+.block__featured-collection {
+  .slider-gallery {
+    width: 100%;
+  }
+
+  .flickity-prev-next-button {
+    @include respond-to("medium-down") {
+      display: none;
+    }
+  }
+}
+
+.featured-collection__button-container {
+  .container.has-column-padding-bottom & {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .featured-collection--slider & {
+    @include respond-to("medium-up") {
+      margin-top: $gutter;
+    }
+  }
+
+  .featured-collection--slider-mobile & {
+    @include respond-to("medium-down") {
+      margin-top: $gutter;
+    }
+  }
+
+  .featured-collection--grid-mobile.featured-collection--onboarding-false & {
+    @include respond-to("medium-down") {
+      margin-top: -$gutter;
+    }
+  }
+}

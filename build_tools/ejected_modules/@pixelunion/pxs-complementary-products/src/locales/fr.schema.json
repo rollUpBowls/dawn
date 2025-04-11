@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "product": {
+      "blocks": {
+        "complementary_products": {
+          "name": "Produits complémentaires",
+          "settings": {
+            "paragraph": {
+              "content": "Pour sélectionner des produits complémentaires, ajoutez l'application Search & Discovery. [En savoir plus](https:\/\/shopify.dev\/themes\/product-merchandising\/recommendations)"
+            },
+            "heading": {
+              "label": "En-tête"
+            },
+            "product_recommendation_limit": {
+              "label": "Quantité maximale de produits à afficher"
+            },
+            "products_per_slide": {
+              "label": "Nombre de produits par page"
+            }
+          }
+        }
+      }
+    }
+  }
+}

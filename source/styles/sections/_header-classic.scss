@@ -1,0 +1,82 @@
+/* # Header - Classic
+================================================== */
+
+@liquid-if "settings.header_layout == 'classic'" {
+  .header {
+    position: relative;
+    z-index: 20;
+    background-color: $header-background;
+    transition: background-color 0.3s linear, height 0.2s linear;
+  }
+
+  .header__brand {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.75rem;
+  }
+
+  .primary-logo {
+    transition: all 0.1s linear;
+
+    + .header__logo-text {
+      display: none;
+    }
+  }
+
+  .header__logo {
+    transition: $transition-default;
+  }
+
+  .header__menu {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .action-area__link.has-cart-count {
+    padding-right: 1.8em;
+  }
+
+  // Overlay header
+
+  [data-enable_overlay="false"] .overlay-logo {
+    display: none;
+  }
+
+  [data-enable_overlay="true"] {
+    position: absolute;
+    width: 100%;
+
+    .header {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .overlay-logo {
+      display: block;
+    }
+
+    .overlay-logo + .primary-logo {
+      display: none;
+    }
+
+    .overlay-logo + .header__logo-text {
+      display: none;
+    }
+
+  }
+
+  // Sticky header
+
+  [data-enable_sticky="true"] .header {
+    z-index: 50;
+  }
+
+  .has-overlaid-header {
+    position: absolute;
+    width: 100%;
+  }
+}

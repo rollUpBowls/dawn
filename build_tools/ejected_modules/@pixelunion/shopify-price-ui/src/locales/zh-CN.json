@@ -1,0 +1,17 @@
+{
+  "product": {
+    "price": {
+      "range_html": "{{ price_min }} - {{ price_max }}",
+      "unit_pricing_html": "{{ unit_quantity }} | {{ unit_price }} / {{ unit_measurement}}"
+    },
+    "badge": {
+      "sale_percentage_range_html": "保存到{{ price_percent }}％",
+      "sale_percentage_single_html": "保存{{ price_percent }}％",
+      "sale_money_range_html": "保存最多{{ price }}",
+      "sale_money_single_html": "保存{{ price }}",
+      "sold_out": "卖光了",
+      "sale": "销售",
+      "in_stock": "有存货"
+    }
+  }
+}

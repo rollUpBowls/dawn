@@ -1,0 +1,34 @@
+{
+  "settings_schema": {
+    "age_gate": {
+      "name": "Verificación de edad",
+      "enable_site_wide": {
+        "label": "Habilitar en todo el sitio"
+      },
+      "minimum_age": {
+        "label": "Edad mínima requerida para acceder al sitio"
+      },
+      "heading": {
+        "label": "Título"
+      },
+      "description": {
+        "label": "Descripción"
+      },
+      "show_logo": {
+        "label": "Mostrar logotipo",
+        "info": "Visite la [configuración de la marca](/admin/settings/branding) para editar el logotipo."
+      }
+    }
+  },
+  "sections": {
+    "age_gate": {
+      "name": "Página de verificación de edad",
+      "minimum_age": {
+        "label": "Edad mínima requerida para acceder a la página"
+      },
+      "presets": {
+        "name": "Página de verificación de edad"
+      }
+    }
+  }
+}

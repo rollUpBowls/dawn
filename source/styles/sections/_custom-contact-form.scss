@@ -1,0 +1,32 @@
+/* # Custom contact form
+================================================== */
+
+.custom-contact-form__errors,
+.custom-contact-form__success {
+  margin-bottom: 20px;
+}
+
+.custom-contact-form__block {
+  margin-bottom: 20px;
+
+  .label {
+    color: inherit;
+  }
+}
+
+.custom-contact-form__block--checkbox ul,
+.custom-contact-form__block--radio ul {
+  margin: 0;
+  list-style: none;
+}
+
+.custom-contact-form__block--checkbox ul li,
+.custom-contact-form__block--radio ul li {
+  display: flex;
+  align-items: center;
+
+  .radio,
+  .checkbox {
+    margin-right: 10px;
+  }
+}

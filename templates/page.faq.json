@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "page": {
+      "type": "page-content__main",
+      "settings": {
+        "show_heading": true,
+        "heading_alignment": "left",
+        "width": "standard",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "main": {
+      "type": "index__faq",
+      "blocks": {
+        "16306825309648acac-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Product Information"
+          }
+        },
+        "16306825309648acac-1": {
+          "type": "content",
+          "settings": {
+            "title": "How do you curate your products?",
+            "answer": "<p>We spend our time carefully seeking and developing products that fit a few simple criteria, they need to be durable, quality made with a simplistic, sustainable and ethical approach. Products that stand the test of time, that will age well, using the best materials and are not destined to end up in a landfill. All the product we carry supports people that share our vision.</p>"
+          }
+        },
+        "16306825309648acac-2": {
+          "type": "content",
+          "settings": {
+            "title": "How is Emporium different?",
+            "answer": "<p>We work with companies and people who are creating products that are better for our world, artists who have a passion for what they produce as we believe this translates into quality products that are manufactured more responsibly. We hope that these items will become part of your life story.</p>"
+          }
+        },
+        "16306825309648acac-3": {
+          "type": "content",
+          "settings": {
+            "title": "How do I care for my product?",
+            "answer": "<p>Best practice for any piece of furniture takes a general precaution towards unusual environments. We recommend avoiding exposure to heat or humidity and direct sunlight to prevent fading and cracking. Surfaces should be covered when possible to prevent obvious damage. Please be aware that heavily dyed fabric can transfer to your furniture and causing discolouration.</p>"
+          }
+        },
+        "16306825309648acac-5": {
+          "type": "content",
+          "settings": {
+            "title": "Are finish colors shown in your photos accurate?",
+            "answer": "<p>All photos on our website are taken by professional photographers under lighting conditions that are typical in a residential home. We try our best to accurately show the finish color and texture as best we can. If we can be of assistance in selecting the right furniture for your situation, fill out our contact page’s form and we would be happy to help.</p>"
+          }
+        },
+        "16306825309648acac-4": {
+          "type": "heading",
+          "settings": {
+            "title": "Order Information"
+          }
+        },
+        "16306825309648acac-6": {
+          "type": "content",
+          "settings": {
+            "title": "When will my order ship?",
+            "answer": "<p>Our team needs 1-2 business days to pack and ship your full order. For larger items, we ask that you allow 3-4 business days. Orders placed after 1:00 pm EST on Friday — or over the weekend — will ship on the next business day.</p>"
+          }
+        },
+        "16306825309648acac-7": {
+          "type": "content",
+          "settings": {
+            "title": "Where do you ship to?",
+            "answer": "<p>We do ship internationally, however, due to the size of some products, there may be shipping restrictions on these items. If you have a special order you’d like to place with us just contact our team and we can try our best to ship the item to your desired location!</p>"
+          }
+        },
+        "8eea8ff4-914e-415b-9912-30ef9f95d3e4": {
+          "type": "content",
+          "settings": {
+            "title": "I have a question about my order, what should I do?",
+            "answer": "<p>Please contact us by visiting our contact page. will gladly be able to assist you with any questions relating to Orders, Order Modifications, Shipping, Returns, & Cancellations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16306825309648acac-0",
+        "16306825309648acac-1",
+        "16306825309648acac-2",
+        "16306825309648acac-3",
+        "16306825309648acac-5",
+        "16306825309648acac-4",
+        "16306825309648acac-6",
+        "16306825309648acac-7",
+        "8eea8ff4-914e-415b-9912-30ef9f95d3e4"
+      ],
+      "settings": {
+        "title": "",
+        "width": "standard",
+        "padding_top": 0,
+        "padding_bottom": 80,
+        "animation": "none",
+        "css_class": "",
+        "custom_css": ""
+      }
+    }
+  },
+  "order": [
+    "page",
+    "main"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Košík",
+      "collections": "Kolekce",
+      "page": "Strana {{ page }}",
+      "products": "Produkty",
+      "search": "Hledat",
+      "tags_html": "Označeno \"{{ tags }}\""
+    }
+  }
+}

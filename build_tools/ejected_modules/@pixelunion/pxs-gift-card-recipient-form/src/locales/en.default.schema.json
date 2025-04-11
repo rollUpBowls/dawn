@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "product": {
+      "blocks": {
+        "form": {
+          "show_gift_card_recipient_form": {
+            "label": "Show recipient information form for gift card products",
+            "info": "Gift card products can optionally be sent direct to a recipient along with a personal message. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+          }
+        }
+      }
+    }
+  }
+}

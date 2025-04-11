@@ -1,0 +1,132 @@
+{
+  "name": "@pixelunion/pxs-complementary-products",
+  "version": "3.5.3",
+  "license": "UNLICENSED",
+  "author": "Pixel Union",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "umd": "dist/index.umd.js",
+  "umdName": "PxsComplementaryProducts",
+  "scripts": {
+    "build": "rollup --config",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "^7.8.7",
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "7.1.1",
+    "rollup": "1.31.1",
+    "rollup-plugin-babel": "4.3.3"
+  },
+  "dependencies": {
+    "@pixelunion/events": "0.0.0",
+    "@pixelunion/shopify-asyncview": "^2.0.5",
+    "flickity": "^2.1.2"
+  },
+  "peerDependencies": {
+    "@pixelunion/rimg": "2.2.0",
+    "@pixelunion/rimg-shopify": "2.5.2"
+  },
+  "paskitPlugin": {
+    "build": [
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/cs.json",
+        "output": "locales/cs.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.json",
+        "output": "locales/de.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.json",
+        "output": "locales/en.default.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.json",
+        "output": "locales/es.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.json",
+        "output": "locales/fr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/hi.json",
+        "output": "locales/hi.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/ja.json",
+        "output": "locales/ja.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/nl.json",
+        "output": "locales/nl.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/pt-BR.json",
+        "output": "locales/pt-BR.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/tr.json",
+        "output": "locales/tr.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/zh-CN.json",
+        "output": "locales/zh-CN.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/de.schema.json",
+        "output": "locales/de.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/en.default.schema.json",
+        "output": "locales/en.default.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/es.schema.json",
+        "output": "locales/es.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/fr.schema.json",
+        "output": "locales/fr.schema.json"
+      },
+      {
+        "action": "mergeLocale",
+        "input": "src/locales/it.schema.json",
+        "output": "locales/it.schema.json"
+      },
+      {
+        "action": "copy",
+        "input": "src/liquid/complementary-product.liquid",
+        "output": "snippets/complementary-product.liquid"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:pixelunion/shared-sections.git",
+    "directory": "complementary-product-block"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+
+,"_resolved": "https://npm.pkg.github.com/download/@pixelunion/pxs-complementary-products/3.5.3/6ff1cda0cc86901c8f330e4459150d2ed610a5f5"
+,"_integrity": "sha512-i9x31uhQplrBaWZh5yfaIQ88Frlyi/lCJK1jyj3kXKLS1SkZLJLggg+JljQTxzo+Mpe7ZSMNxDPUGSnC1Uh07w=="
+,"_from": "@pixelunion/pxs-complementary-products@3.5.3"
+}

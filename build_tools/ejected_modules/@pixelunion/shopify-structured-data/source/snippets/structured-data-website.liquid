@@ -1,0 +1,13 @@
+{% comment %}
+  Store information
+  https://developers.google.com/search/docs/data-types/sitename
+{% endcomment %}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ shop.name }}",
+    "url": "{{ shop.url }}"
+  }
+</script>

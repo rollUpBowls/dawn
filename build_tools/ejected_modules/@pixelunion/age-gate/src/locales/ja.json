@@ -1,0 +1,23 @@
+{
+  "age_gate": {
+    "form": {
+      "confirm": "年齢を確認し、{{ shop }}に進みます",
+      "error": "ショップへのアクセスは、年齢{{ age }}以上に制限されています。",
+      "day": "日",
+      "month": "月",
+      "year": "年",
+      "january": "1月",
+      "february": "2月",
+      "march": "行進",
+      "april": "4月",
+      "may": "5月",
+      "june": "六月",
+      "july": "7月",
+      "august": "8月",
+      "september": "9月",
+      "october": "10月",
+      "november": "11月",
+      "december": "12月"
+    }
+  }
+}

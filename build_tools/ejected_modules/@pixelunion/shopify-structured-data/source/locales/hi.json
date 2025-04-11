@@ -1,0 +1,12 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "गाड़ी",
+      "collections": "संग्रह",
+      "page": "पृष्ठ {{ page }}",
+      "products": "उत्पाद",
+      "search": "खोज",
+      "tags_html": "चिह्नित \"{{ tags }}\""
+    }
+  }
+}

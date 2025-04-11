@@ -1,0 +1,10 @@
+{
+  "product": {
+    "variants": {
+      "choose_option": "{{ option }}を選択します",
+      "chosen_option_html": "{{ option }}：<span> {{ value }} </span>",
+      "choose_variant": "バリアントを選択してください",
+      "unavailable": "利用不可"
+    }
+  }
+}

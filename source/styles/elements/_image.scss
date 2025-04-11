@@ -1,0 +1,134 @@
+/* # Image
+================================================== */
+
+/* Lazyloading styles */
+
+@liquid-if "settings.image_loading_style == 'appear'" {
+
+  .transition--appear {
+    opacity: 0;
+    //important is to override the fade-in transition on product img
+    transition: opacity 0s !important, transform $transition-speed ease-in-out;
+    &.lazyloaded {
+      opacity: 1;
+    }
+  }
+
+} @liquid-elsif "settings.image_loading_style == 'fade-in'" {
+
+  .transition--fade-in {
+    opacity: 0;
+    transition: opacity $transition-speed ease-in;
+    &.lazyloaded {
+      opacity: 1;
+    }
+  }
+
+} @liquid-elsif "settings.image_loading_style == 'blur-up'" {
+
+  .transition--blur-up {
+    backface-visibility: hidden;
+    filter: blur(5px);
+    transform: translate3d(0,0,0);
+    transition: filter 200ms;
+    &.lazyloaded {
+      filter: blur(0px);
+      transform: scale(1);
+    }
+  }
+
+} @liquid-elsif "settings.image_loading_style == 'color'" {
+
+  .transition--color {
+    opacity: 0;
+    transition: opacity $transition-speed ease-in;
+    &.lazyloaded {
+      opacity: 1;
+    }
+  }
+
+  .image-element__wrap[style*=".png"] {
+    background: transparent !important; //Prevents background showing on pngs that might have transparency
+  }
+
+} @liquid-elsif "settings.image_loading_style == 'none'" {
+
+//loads nothing
+
+}
+
+//Ensures that small images are not stretched larger
+.image__container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0; //Make sure there is no space for descender characters
+
+  img {
+    width: 100%;
+  }
+}
+
+.image-element__wrap {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+  .has-image-crop--mobile-true & {
+    @include respond-to("medium-down") {
+      max-width: 100% !important; /* Overwrite stretch_width parameter */
+    }
+  }
+}
+
+.image-element__wrap img {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.has-image-crop {
+  .image-element__wrap {
+    height: 100%;
+  }
+
+  img {
+    height: 100% !important; //overrides inline height styles
+    object-fit: cover;
+  }
+
+  &.image-crop--left {
+    img {
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+
+  &.image-crop--right {
+    img {
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+
+  &.image-crop--center {
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &.image-crop--none {
+    height: auto;
+
+    img {
+      position: static;
+      height: auto !important; //overrides image-crop 100%
+      object-fit: fill;
+    }
+  }
+}
