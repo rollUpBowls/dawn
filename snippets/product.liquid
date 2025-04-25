@@ -22,7 +22,15 @@
     @param section_onboarding
   {% endcomment %}
 
+
+
+
+
 {% comment %} HTML markup {% endcomment %}
+
+
+
+
 
 <div class="product_section
             js-product_section
@@ -122,6 +130,19 @@
               {{ product.title }}
             {% endif %}
           </h1>
+
+          <p class="description"> 
+          <b>Brand:</b> <span style="color: #b72025;">{{ product.vendor }}</span><br />
+          <b>Heritage:</b>  <span style="color: #b72025;">{{ product.metafields.custom.heritage.value.name.value }}</span><br />
+          <b>Availability:</b> <span style="color: #b72025;"> {% if product.available %}
+  In Stock Now – Ready to Send
+{% else %}
+  Sold Out
+{% endif %}</span>
+<br />
+          <b>Rating:</b> <span style="color: #b72025;">{{ product.metafields.reviews.rating | metafield_tag }}</span></p>
+
+
 
         {%- elsif block.type == 'size-chart' -%}
           {% comment %} Size chart {% endcomment %}
@@ -271,6 +292,8 @@
             endif
           %}
 
+{% assign split_description = product.description | split: '<!-- split -->' %}
+
           <div class="product__description content">
             <div
               class="
@@ -286,6 +309,7 @@
             {% if block.settings.mobile_product_description != blank %}
               <div class="is-hidden-desktop-only has-padding-top">
                 {{- block.settings.mobile_product_description -}}
+                {{ split_description[0] }}
               </div>
             {% endif %}
           </div>
@@ -331,6 +355,147 @@
               {% endunless %}
             </div>
           {% endif %}
+<div style="max-width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;">
+  <a href="#shipping-info" style="flex: 1 1 22%; display: block;">
+    <img src="https://cdn.shopify.com/s/files/1/0050/6449/1121/files/shipping-tile.png?v=1745387822" alt="Shipping Info" style="width: 100%; height: auto; display: block;">
+  </a>
+  <a href="#returns" style="flex: 1 1 22%; display: block;">
+    <img src="https://cdn.shopify.com/s/files/1/0050/6449/1121/files/easy-returns-tile.png?v=1745387822" alt="30 Day Easy Returns" style="width: 100%; height: auto; display: block;">
+  </a>
+  <div style="flex: 1 1 22%;">
+    <img src="https://cdn.shopify.com/s/files/1/0050/6449/1121/files/collect-from-sassafras-tile.png?v=1745387822" alt="Collect from Sassafras" style="width: 100%; height: auto; display: block;">
+  </div>
+  <div style="flex: 1 1 22%;">
+    <img src="https://cdn.shopify.com/s/files/1/0050/6449/1121/files/quality-checked-tile.png?v=1745387822" alt="Quality Checked" style="width: 100%; height: auto; display: block;">
+  </div>
+</div>
+
+{% comment %}
+Script to make the boxes open automatically
+{% endcomment %}
+
+<script>
+  function openAccordionFromHash() {
+    const id = window.location.hash;
+    if (id) {
+      const toggle = document.querySelector(id + " .accordion-toggle");
+      const content = document.querySelector(id + " .accordion-content");
+      if (toggle && content) {
+        toggle.classList.add("open");
+        content.classList.add("open");
+      }
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", openAccordionFromHash);
+  window.addEventListener("hashchange", openAccordionFromHash);
+</script>
+
+<!-- Accordion for Additional Information -->
+{% if split_description[1] %}
+  <div class="product-accordion">
+    <button class="accordion-toggle">
+      Additional Information <span class="accordion-icon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+        </svg>
+      </span>
+    </button>
+    <div class="accordion-content">
+      {{ split_description[1] }}
+    </div>
+  </div>
+{% endif %}
+
+<!-- Accordion for Specifications -->
+{% if split_description[2] %}
+  <div class="product-accordion">
+    <button class="accordion-toggle">
+      Specifications <span class="accordion-icon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+        </svg>
+      </span>
+    </button>
+    <div class="accordion-content">
+      {{ split_description[2] }}
+    </div>
+  </div>
+{% endif %}
+
+<!-- Accordion for Shipping Info -->
+<div id="shipping-info" class="product-accordion">
+  <button class="accordion-toggle">
+    Shipping Information <span class="accordion-icon" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24">
+        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      </svg>
+    </span>
+  </button>
+  <div class="accordion-content">
+    <p>Add shipping information here</p>
+  </div>
+</div>
+
+<!-- Accordion for Returns -->
+<div id="returns" class="product-accordion">
+  <button class="accordion-toggle">
+    30 Day Easy Returns <span class="accordion-icon" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24">
+        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      </svg>
+    </span>
+  </button>
+  <div class="accordion-content">
+    <p>Add return information here</p>
+  </div>
+</div>
+
+<!-- Accordion Toggle Script -->
+<script>
+  document.querySelectorAll('.accordion-toggle').forEach(function (button) {
+    button.addEventListener('click', function () {
+      this.classList.toggle('open');
+      this.nextElementSibling.classList.toggle('open');
+    });
+  });
+</script>
+
+<style>
+  .accordion-toggle {
+    background: #eee;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    margin-block: 15pt;
+  }
+
+  .accordion-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-toggle.open .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .accordion-content.open {
+    display: block;
+  }
+</style>
+
 
         {%- elsif block.type == 'product-links' -%}
           {% comment %} Collections, type, tags {% endcomment %}

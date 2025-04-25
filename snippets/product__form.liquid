@@ -217,13 +217,13 @@
 
     {% if product.available %}
       {% if settings.display_inventory_left %}
-        <p class="items_left">
+        <p class="items_left"> adafsfads
           {% if selected_variant.inventory_management != blank and selected_variant.inventory_quantity > 0 %}
             {% capture items_left_text %}
               {% if selected_variant.inventory_quantity == 1 %}
-                {{ 'products.product.items_left_count.one' | t }}
+                 {{ 'products.product.items_left_count.one' | t }}
               {% else %}
-                {{ 'products.product.items_left_count.other' | t }}
+                 {{ 'products.product.items_left_count.other' | t }}
               {% endif %}
             {% endcapture %}
             {% if selected_variant.inventory_quantity <= settings.inventory_threshold %}
@@ -543,7 +543,10 @@
               render 'quantity-box',
               variant: selected_variant,
             %}
+            
           </div>
+
+          
         {% endif %}
 
         {% if show_payment_button %}

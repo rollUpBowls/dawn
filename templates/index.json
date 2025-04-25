@@ -1,51 +1,239 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "16394170664118cf19": {
-      "type": "index__slideshow-classic",
+    "index_video_cPTgGt": {
+      "type": "index__video",
+      "settings": {
+        "iframe_video": "https://www.youtube.com/watch?v=zFnLFDMNspI",
+        "html5_video": "",
+        "autoplay": false,
+        "autoloop": true,
+        "mute_video": false,
+        "controls": false,
+        "aspect_ratio": "16:9",
+        "pretext": "",
+        "title": "",
+        "subtitle": "",
+        "pretext_color": "#000000",
+        "heading_color": "#000000",
+        "subheading_color": "#000000",
+        "text_align": "center",
+        "horizontal_text_position": "center",
+        "vertical_text_position": "center",
+        "button_label": "",
+        "button_style": "button--secondary",
+        "text_width": 70,
+        "overlay_style": "none",
+        "video_overlay_color": "#ffffff",
+        "background_opacity": 77,
+        "gradient": "rgba(0,0,0,0)",
+        "gradient_rotation": 180,
+        "width": "wide",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "none",
+        "mobile_text_below_video": true,
+        "pretext_color_mobile": "rgba(0,0,0,0)",
+        "heading_color_mobile": "rgba(0,0,0,0)",
+        "subheading_color_mobile": "rgba(0,0,0,0)",
+        "mobile_text_alignment": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 0,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "grid_8Ya7Rq": {
+      "type": "grid",
       "blocks": {
-        "1639417066aa16c460-0": {
-          "type": "image",
+        "grid_item_da8RV6": {
+          "type": "grid_item",
           "settings": {
             "link": "",
-            "image": "shopify://shop_images/flex-emporium1.jpg",
-            "pretext": "",
-            "title": "Embrace your Space",
-            "subtitle": "<p>Fill your home with unique finds</p>",
-            "pretext_color": "#000000",
-            "heading_color": "#a32668",
-            "subheading_color": "#000000",
-            "text_alignment": "center",
-            "text_horizontal_position": "center",
-            "background_color": "#ffffff",
-            "background_opacity": 77,
-            "border_color": "#ffffff",
-            "border_width": 0,
-            "text_width": 40,
-            "button_1": "New Arrivals",
-            "button_1_link": "shopify://collections/new",
-            "button_1_style": "button--primary",
-            "button_2": "",
-            "button_2_link": "",
-            "button_2_style": "button--secondary",
-            "pretext_color_mobile": "rgba(0,0,0,0)",
-            "heading_color_mobile": "rgba(0,0,0,0)",
-            "subheading_color_mobile": "rgba(0,0,0,0)"
+            "heading": "25 Years",
+            "text": "Dependable - Sharing Toys Since 1999",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
+          }
+        },
+        "grid_item_er7bqn": {
+          "type": "grid_item",
+          "settings": {
+            "link": "",
+            "heading": "100%",
+            "text": "Australian Owned & Operated",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
+          }
+        },
+        "grid_item_3yLGcN": {
+          "type": "grid_item",
+          "settings": {
+            "link": "",
+            "heading": "250,000+",
+            "text": "Customers - Trusted againg & Again",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
           }
         }
       },
       "block_order": [
-        "1639417066aa16c460-0"
+        "grid_item_da8RV6",
+        "grid_item_er7bqn",
+        "grid_item_3yLGcN"
+      ],
+      "custom_css": [
+        ".placeholder-svg {display: none;}"
       ],
       "settings": {
-        "image_transition": "slide",
-        "image_slideshow_speed": 8,
-        "show_arrows": true,
-        "show_nav_buttons": true,
-        "mobile_text_below_image": true,
+        "column_count": 3,
+        "align_height": false,
+        "image_height": 300,
+        "border_radius": 0,
+        "enable_zoom": true,
+        "show_text_below_image": true,
+        "heading_size": "regular",
+        "text_alignment": "center",
+        "text_horizontal_position": "center",
+        "text_vertical_position": "middle",
+        "text_width": 80,
+        "text_color": "#ffffff",
+        "overlay_background": "rgba(0,0,0,0)",
+        "overlay_background_opacity": 0,
+        "section_background_color": "#1a354c",
         "width": "standard",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
         "animation": "none",
+        "mobile_heading_size": "same_as_desktop",
+        "mobile_text_alignment": "same_as_desktop",
+        "mobile_text_horizontal_position": "same_as_desktop",
+        "mobile_text_vertical_position": "same_as_desktop",
+        "mobile_text_width": 100,
+        "mobile_layout": "slider",
+        "show_arrows": false,
+        "show_nav_buttons": true,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20
+      }
+    },
+    "index_collection_list_EwGAwM": {
+      "type": "index__collection-list",
+      "blocks": {
+        "collection_aeTp8b": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "silly-puppets",
+            "image": "shopify://shop_images/sillypuppetscollecitonimg.png",
+            "title": "",
+            "button_label": "View products"
+          }
+        },
+        "collection_Ux3qn6": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "living-puppets",
+            "image": "shopify://shop_images/livingpuppetscollecitonimg.png",
+            "title": "",
+            "button_label": "View products"
+          }
+        },
+        "collection_k9QiQR": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "folkmanis",
+            "image": "shopify://shop_images/folkmaniscollecitonimg.png",
+            "title": "",
+            "button_label": "View products"
+          }
+        },
+        "collection_jc9VCE": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "matryoshka",
+            "image": "shopify://shop_images/matryoshkacollecitonimg.png",
+            "title": "Matryoshka",
+            "button_label": "View products"
+          }
+        },
+        "collection_cq6jkL": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "charlie-bears",
+            "image": "shopify://shop_images/collectiblebearscollectionimg.png",
+            "title": "Collectable Bears",
+            "button_label": "View products"
+          }
+        }
+      },
+      "block_order": [
+        "collection_aeTp8b",
+        "collection_Ux3qn6",
+        "collection_k9QiQR",
+        "collection_jc9VCE",
+        "collection_cq6jkL"
+      ],
+      "settings": {
+        "collections_per_row": 5,
+        "align_height": false,
+        "collection_height": 400,
+        "enable_zoom": true,
+        "button_style": "button--primary",
+        "overlay_text": "#ffffff",
+        "overlay_background": "#1a354c",
+        "overlay_background_opacity": 70,
+        "collection_title_below_image": false,
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "mobile_layout": "stacked",
+        "show_arrows": true,
+        "show_navigation_dots": true,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1744594232c6b18388": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_BprAiR": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_BprAiR"
+      ],
+      "settings": {
+        "width": "standard",
+        "padding_top": 20,
+        "padding_bottom": 20,
         "css_class": "",
         "custom_css": ""
       }
@@ -54,186 +242,448 @@
       "type": "index__featured-collection",
       "settings": {
         "title": "Popular Picks",
-        "collection": "editors-picks",
+        "collection": "topsy-turvy-dolls",
         "products_per": 5,
-        "mobile_products_per_row": "2",
         "products_limit": 15,
         "align_height": false,
         "collection_height": 200,
+        "button_label": "",
+        "button_style": "button--primary",
         "collection_style": "slider",
         "width": "wide",
         "show_gutter": true,
         "padding_top": 60,
         "padding_bottom": 60,
         "animation": "none",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "1639421910fd42e587": {
-      "type": "index__featured-collection",
-      "settings": {
-        "title": "Comfy Throws",
-        "collection": "throws",
-        "products_per": 5,
+        "collection_layout_mobile": "grid",
         "mobile_products_per_row": "2",
-        "products_limit": 15,
-        "align_height": false,
-        "collection_height": 200,
-        "collection_style": "slider",
-        "width": "wide",
-        "show_gutter": true,
-        "padding_top": 0,
-        "padding_bottom": 60,
-        "animation": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
         "css_class": "",
         "custom_css": ""
       }
     },
-    "featured_promotions": {
-      "type": "index__featured-promotions",
+    "index_collection_list_83c9za": {
+      "type": "index__collection-list",
       "blocks": {
-        "featured_promotions-0": {
-          "type": "image",
+        "collection_yd3pQq": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/emporium__fp-01.jpg",
-            "link": "shopify://collections/editors-picks",
-            "overlay_background": "rgba(0,0,0,0)",
-            "overlay_background_opacity": 50,
-            "overlay_text": "rgba(0,0,0,0)",
-            "icon_label": "heart",
-            "title": "Our Seasonal Picks",
-            "text": "<p>Our team's loved products from this season.</p>"
+            "feature_collection": "toys-for-baby-newborn-12-mths",
+            "title": "",
+            "button_label": ""
           }
         },
-        "featured_promotions-1": {
-          "type": "image",
+        "collection_PWQzX4": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/emporium__fp-02.jpg",
-            "link": "shopify://collections/gifts",
-            "overlay_background": "rgba(0,0,0,0)",
-            "overlay_background_opacity": 50,
-            "overlay_text": "rgba(0,0,0,0)",
-            "icon_label": "gift",
-            "title": "Gifts for Everyone",
-            "text": "<p>A curated collection of products for any homeowner.</p>"
+            "feature_collection": "toys-for-toddler-1-3-yrs",
+            "title": "",
+            "button_label": ""
           }
         },
-        "featured_promotions-2": {
-          "type": "image",
+        "collection_wCjUWN": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/emporium__fp-03.jpg",
-            "link": "shopify://collections/accessories",
-            "overlay_background": "rgba(0,0,0,0)",
-            "overlay_background_opacity": 50,
-            "overlay_text": "rgba(0,0,0,0)",
-            "icon_label": "hanger",
-            "title": "We Love Accessories",
-            "text": "<p>Shop our favourite bags, scarves and leather goods.</p>"
+            "feature_collection": "toys-for-preschool-3-6-yrs",
+            "title": "",
+            "button_label": ""
           }
         },
-        "featured_promotions-3": {
-          "type": "image",
+        "collection_fb6Knf": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/emporium__fp-04.jpg",
-            "link": "shopify://collections/garden",
-            "overlay_background": "rgba(0,0,0,0)",
-            "overlay_background_opacity": 50,
-            "overlay_text": "rgba(0,0,0,0)",
-            "icon_label": "leaf-2",
-            "title": "Gardening Season is Here",
-            "text": "<p>We have everything you need to plant your garden vision.</p>"
+            "feature_collection": "toys-for-early-primary-6-9-yrs",
+            "title": "",
+            "button_label": ""
           }
         },
-        "cac26c81-da76-4157-9929-db93a3520c74": {
-          "type": "image",
+        "collection_qAVCtV": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/emporium__fp-05.jpg",
-            "link": "shopify://collections/all",
-            "overlay_background": "rgba(0,0,0,0)",
-            "overlay_background_opacity": 50,
-            "overlay_text": "rgba(0,0,0,0)",
-            "icon_label": "house",
-            "title": "In the Mood to Browse?",
-            "text": "<p>Take a look at our entire collection.</p>"
+            "feature_collection": "toys-for-late-primary-9-12-yrs",
+            "title": "",
+            "button_label": ""
+          }
+        },
+        "collection_QcMcLR": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "toys-for-kidults-family-12-yrs",
+            "title": "",
+            "button_label": ""
           }
         }
       },
       "block_order": [
-        "featured_promotions-0",
-        "featured_promotions-1",
-        "featured_promotions-2",
-        "featured_promotions-3",
-        "cac26c81-da76-4157-9929-db93a3520c74"
+        "collection_yd3pQq",
+        "collection_PWQzX4",
+        "collection_wCjUWN",
+        "collection_fb6Knf",
+        "collection_qAVCtV",
+        "collection_QcMcLR"
       ],
+      "custom_css": [],
       "settings": {
-        "border_radius": 0,
-        "crop_images": true,
-        "overlay_background": "#000000",
-        "overlay_background_opacity": 40,
+        "collections_per_row": 5,
+        "align_height": false,
+        "collection_height": 400,
+        "enable_zoom": true,
+        "button_style": "button--secondary",
         "overlay_text": "#ffffff",
-        "show_border": false,
+        "overlay_background": "#939393",
+        "overlay_background_opacity": 0,
+        "collection_title_below_image": true,
         "width": "standard",
         "show_gutter": true,
         "padding_top": 20,
         "padding_bottom": 20,
-        "animation": "fadeInDown",
+        "animation": "fadeIn",
+        "mobile_layout": "stacked",
+        "show_arrows": true,
+        "show_navigation_dots": true,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
         "css_class": "",
-        "custom_css": ""
+        "custom_css": ".collection-list__caption-wrapper--below-image {\n    display: flex\n;\n    flex-direction: column;\n    align-items: center;\n    padding: 20px;\n    display: none;\n}\n\n.collection-list__wrapper {\n  display: flex !important;\n  flex-wrap: wrap !important;\n  justify-content: space-between;\n}\n\n.collection-list__thumbnail {\n  width: calc(100% / 6 - 20px) !important;\n  flex: 0 0 calc(100% / 6 - 20px) !important;\n  max-width: calc(100% / 6 - 20px) !important;\n}\n\n@media screen and (max-width: 1024px) {\n  .collection-list__thumbnail {\n    width: 33.33% !important;\n    flex: 0 0 33.33% !important;\n    max-width: 33.33% !important;\n  }\n}\n\n@media screen and (max-width: 768px) {\n  .collection-list__thumbnail {\n    width: 50% !important;\n    flex: 0 0 50% !important;\n    max-width: 50% !important;\n  }\n}\n\n@media screen and (max-width: 480px) {\n  .collection-list__thumbnail {\n    width: 100% !important;\n    flex: 0 0 100% !important;\n    max-width: 100% !important;\n  }\n}"
       }
     },
-    "1639421646e22a9a5f": {
+    "index_image_with_text_F3TeV9": {
       "type": "index__image-with-text",
       "blocks": {
-        "1639421646de184ebd-2": {
-          "type": "text",
-          "settings": {
-            "title": "How We Source Products",
-            "heading_size": "regular",
-            "text": "<p>We spend our time carefully seeking and developing products that fit a few simple criteria, they need to be durable, quality made with a simplistic, sustainable and ethical approach.</p>",
-            "button_label": "",
-            "link": "",
-            "button_style": "button--primary",
-            "background": "rgba(0,0,0,0)",
-            "text_color": "rgba(0,0,0,0)",
-            "alignment": "left",
-            "vertical_position": "center"
-          }
-        },
-        "1639421646de184ebd-0": {
+        "image_FdKJ4c": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/emporium__gallery-01.jpg",
+            "image": "shopify://shop_images/geppetto-s-workshop.jpg",
             "image_link": ""
           }
         },
-        "218b352f-f2e4-4a3b-a50a-d2c99ee3b5a4": {
+        "text_wzp9Y8": {
           "type": "text",
           "settings": {
-            "title": "Curated and Handmade",
-            "heading_size": "regular",
-            "text": "<p>We also specifically curate handmade items fabricated with care. Small run, handmade, artisan and vintage products offer a beauty that is tactile and to be celebrated. Shop our unique handmade products <a href=\"/collections/handmade\" title=\"Handmade\">here.</a></p>",
-            "button_label": "",
+            "title": "You’ve arrived at Australia’s finest online puppet and toy shop experience!",
+            "heading_size": "small",
+            "text": "<p>Geppetto’s Workshop oﬀers you a journey through the nostalgia of your childhood, all set to the sounds, smells and textures of a classic European toy store. For over 25 years, customers have visited regularly to our unique collection of puppet and toy treasures.</p><p>Our toy shop in the mountain village of Sassafras has become a tourism destination for visitors to the Dandenong Ranges of Melbourne. Our beauful online store now oﬀers customers a selection of the best of our range, all delivered to your home, anywhere in Australia.</p><p>These are the toys of our childhood, combined with the best of today. These are the toys and puppets you keep in the “tub for the grand kids” …never to be sent to the opp-shop. These are the toys that can go the distance and may become the favourites of your children.</p>",
+            "alignment": "left",
+            "vertical_position": "center",
+            "button_label": "View all",
             "link": "",
             "button_style": "button--primary",
             "background": "rgba(0,0,0,0)",
-            "text_color": "rgba(0,0,0,0)",
-            "alignment": "left",
-            "vertical_position": "center"
+            "text_color": "#ffffff",
+            "mobile_title": "",
+            "mobile_heading_size": "same_as_desktop",
+            "mobile_text": "",
+            "mobile_alignment": "same_as_desktop"
           }
         }
       },
       "block_order": [
-        "1639421646de184ebd-2",
-        "1639421646de184ebd-0",
-        "218b352f-f2e4-4a3b-a50a-d2c99ee3b5a4"
+        "image_FdKJ4c",
+        "text_wzp9Y8"
+      ],
+      "custom_css": [
+        ".image-with-text.image-with-text-1 {background-color: #1a354c;}"
       ],
       "settings": {
         "width": "standard",
         "show_gutter": true,
-        "padding_top": 52,
-        "padding_bottom": 15,
-        "animation": "fadeInDown",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "mobile_text_position": "same_as_desktop",
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_heading_tCJAVc": {
+      "type": "index__heading",
+      "settings": {
+        "preheading": "",
+        "title": "Recently Arrived",
+        "subheading": "",
+        "heading_alignment": "center",
+        "vertical_spacing": "medium",
+        "preheading_color": "rgba(0,0,0,0)",
+        "heading_color": "#000000",
+        "subheading_color": "rgba(0,0,0,0)",
+        "background": "rgba(0,0,0,0)",
+        "gradient": "rgba(0,0,0,0)",
+        "gradient_rotation": 0,
+        "width": "standard",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "none",
+        "mobile_text_alignment": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_collection_list_mf7zPW": {
+      "type": "index__collection-list",
+      "blocks": {
+        "collection_J8NazW": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "bajo",
+            "title": "",
+            "button_label": "View products"
+          }
+        },
+        "collection_GBF796": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "dexterity-fidget-and-sensory-toys",
+            "title": "",
+            "button_label": "View products"
+          }
+        },
+        "collection_a9FU8V": {
+          "type": "collection",
+          "settings": {
+            "feature_collection": "playforever-1",
+            "title": "",
+            "button_label": "View products"
+          }
+        }
+      },
+      "block_order": [
+        "collection_J8NazW",
+        "collection_GBF796",
+        "collection_a9FU8V"
+      ],
+      "settings": {
+        "collections_per_row": 3,
+        "align_height": false,
+        "collection_height": 400,
+        "enable_zoom": true,
+        "button_style": "button--secondary",
+        "overlay_text": "#ffffff",
+        "overlay_background": "#939393",
+        "overlay_background_opacity": 70,
+        "collection_title_below_image": false,
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "mobile_layout": "stacked",
+        "show_arrows": true,
+        "show_navigation_dots": true,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_heading_Lx3Ktg": {
+      "type": "index__heading",
+      "settings": {
+        "preheading": "",
+        "title": "Brands from over 32 countries",
+        "subheading": "",
+        "heading_alignment": "center",
+        "vertical_spacing": "medium",
+        "preheading_color": "rgba(0,0,0,0)",
+        "heading_color": "#000000",
+        "subheading_color": "rgba(0,0,0,0)",
+        "background": "rgba(0,0,0,0)",
+        "gradient": "rgba(0,0,0,0)",
+        "gradient_rotation": 0,
+        "width": "standard",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "none",
+        "mobile_text_alignment": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_logo_list_jFcywR": {
+      "type": "index__logo-list",
+      "blocks": {
+        "logo_image_ipyMqK": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-janod.png",
+            "link": ""
+          }
+        },
+        "logo_image_hwnrTc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-sylvanian-families.png",
+            "link": ""
+          }
+        },
+        "logo_image_fUifyM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-jellycat.png",
+            "link": ""
+          }
+        },
+        "logo_image_pTn6wh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-haba.png",
+            "link": ""
+          }
+        },
+        "logo_image_nxyMmk": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-gamewright.png",
+            "link": ""
+          }
+        },
+        "logo_image_3mw9fN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo-silly-puppets.png",
+            "link": ""
+          }
+        },
+        "logo_image_A6eChe": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/charlie-bears-logo.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_ipyMqK",
+        "logo_image_hwnrTc",
+        "logo_image_fUifyM",
+        "logo_image_pTn6wh",
+        "logo_image_nxyMmk",
+        "logo_image_3mw9fN",
+        "logo_image_A6eChe"
+      ],
+      "settings": {
+        "logos_per_row": 8,
+        "logo_size": "medium",
+        "background": "rgba(0,0,0,0)",
+        "gradient": "rgba(0,0,0,0)",
+        "gradient_rotation": 0,
+        "width": "standard",
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 0,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_image_with_text_X6AqDh": {
+      "type": "index__image-with-text",
+      "blocks": {
+        "image_YWtm8R": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GW_-_Silly_Puppets_Tile_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_LUjBPx": {
+          "type": "text",
+          "settings": {
+            "title": "We're Australia's Puppet Specialists",
+            "heading_size": "regular",
+            "text": "<p>Shopping online at Geppeo’s Workshop has made it simpler than ever to bring a world of imagination into your home, school, or workplace ... and what better way to ignite creavity than with puppets?</p><p>Geppeo’s Workshop is not simply a toy shop; it's a magical puppet store with a huge range from human characters, fantasy creatures, and animals. A standout in our range of over 400 puppets is our animal Folkmanis puppets with their lifelike designs. For those wanting a fun and playful companion, our Silly Puppets and Living Puppets come in a range of characters, brimming with personality and possibility.</p><p>Customers with an interest in craftsmanship will enjoy our handmade marionettes; each string, joint and limb designed to ensure joyful movement. Some, like our Ocean Yuen hand puppets oﬀer our iconic Australian animals, all made right here in Australia.</p><p>Beyond their play value, puppets can serve as powerful communication tools and are often employed by psychologists, nurses, speech pathologists, teachers, librarians andchurch groups.</p>",
+            "alignment": "left",
+            "vertical_position": "center",
+            "button_label": "Browse 400+ Puppets",
+            "link": "shopify://collections/puppet-sets",
+            "button_style": "button--primary",
+            "background": "#ffffff",
+            "text_color": "#0a0909",
+            "mobile_title": "",
+            "mobile_heading_size": "same_as_desktop",
+            "mobile_text": "",
+            "mobile_alignment": "same_as_desktop"
+          }
+        }
+      },
+      "block_order": [
+        "image_YWtm8R",
+        "text_LUjBPx"
+      ],
+      "settings": {
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "mobile_text_position": "same_as_desktop",
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_featured_collection_tYzJQh": {
+      "type": "index__featured-collection",
+      "settings": {
+        "title": "Currently Popular",
+        "collection": "newest-products",
+        "products_per": 5,
+        "products_limit": 10,
+        "align_height": false,
+        "collection_height": 200,
+        "button_label": "",
+        "button_style": "button--primary",
+        "collection_style": "grid",
+        "width": "wide",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "collection_layout_mobile": "grid",
+        "mobile_products_per_row": "1",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "index_heading_xAQ9rX": {
+      "type": "index__heading",
+      "settings": {
+        "preheading": "",
+        "title": "\"We stock toys that create an emotional response in me.. like.. OMG. I must pick it up now!\"",
+        "subheading": "<p>Dion Bright | Owner</p>",
+        "heading_alignment": "center",
+        "vertical_spacing": "medium",
+        "preheading_color": "rgba(0,0,0,0)",
+        "heading_color": "rgba(0,0,0,0)",
+        "subheading_color": "rgba(0,0,0,0)",
+        "background": "rgba(0,0,0,0)",
+        "gradient": "rgba(0,0,0,0)",
+        "gradient_rotation": 0,
+        "width": "standard",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "animation": "none",
+        "mobile_text_alignment": "none",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
         "css_class": "",
         "custom_css": ""
       }
@@ -241,32 +691,200 @@
     "16394220705104f7f0": {
       "type": "index__newsletter",
       "settings": {
+        "newsletter_title": "Want to stay in contact?",
+        "newsletter_richtext": "<p>Sign up to Geppetto's Workshop News<br/><br/>For the latest offers, new products and more</p>",
+        "newsletter_section_text_align": "left",
         "display_first_name": false,
         "display_last_name": false,
-        "newsletter_title": "Get on the list",
-        "newsletter_richtext": "<p>Gain access to exclusive offers and be the first to know about new arrivals.</p>",
-        "newsletter_section_text_align": "center",
-        "background_color": "#ffffff",
+        "background_color": "#e6e6e6",
         "text_color": "#293953",
         "image_darken": false,
-        "image_position": "right",
+        "image": "shopify://shop_images/Screenshot_2025-04-16_at_2.34.01_pm.png",
+        "image_position": "left",
         "width": "wide",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
         "padding_right": 0,
         "animation": "fadeIn",
+        "mobile_text_alignment": "none",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
         "css_class": "",
         "custom_css": ""
+      }
+    },
+    "grid_LVXjEQ": {
+      "type": "grid",
+      "blocks": {
+        "grid_item_nL6jpY": {
+          "type": "grid_item",
+          "settings": {
+            "grid_image": "shopify://shop_images/Long_Logo_bbb29010-ef7a-4155-a64c-1a9c4f5f214d.png",
+            "link": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
+          }
+        },
+        "grid_item_mrKE7b": {
+          "type": "grid_item",
+          "settings": {
+            "link": "",
+            "heading": "Free Delivery",
+            "text": "On orders over $130 within Australia",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
+          }
+        },
+        "grid_item_KtbHUf": {
+          "type": "grid_item",
+          "settings": {
+            "link": "",
+            "heading": "Returns OK!",
+            "text": "It's OK to ask for a Return or Refund*",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
+          }
+        },
+        "grid_item_7CNyFw": {
+          "type": "grid_item",
+          "settings": {
+            "link": "",
+            "heading": "International",
+            "text": "We ship all around the world*",
+            "button_label": "",
+            "button_style": "button--primary",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_background": "rgba(0,0,0,0)",
+            "overlay_background_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_nL6jpY",
+        "grid_item_mrKE7b",
+        "grid_item_KtbHUf",
+        "grid_item_7CNyFw"
+      ],
+      "custom_css": [
+        ".placeholder-svg {display: none;}"
+      ],
+      "settings": {
+        "column_count": 4,
+        "align_height": false,
+        "image_height": 300,
+        "border_radius": 0,
+        "enable_zoom": false,
+        "show_text_below_image": true,
+        "heading_size": "regular",
+        "text_alignment": "center",
+        "text_horizontal_position": "center",
+        "text_vertical_position": "middle",
+        "text_width": 80,
+        "text_color": "rgba(0,0,0,0)",
+        "overlay_background": "rgba(0,0,0,0)",
+        "overlay_background_opacity": 0,
+        "section_background_color": "rgba(0,0,0,0)",
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "mobile_heading_size": "same_as_desktop",
+        "mobile_text_alignment": "same_as_desktop",
+        "mobile_text_horizontal_position": "same_as_desktop",
+        "mobile_text_vertical_position": "same_as_desktop",
+        "mobile_text_width": 100,
+        "mobile_layout": "slider",
+        "show_arrows": false,
+        "show_nav_buttons": true,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20
+      }
+    },
+    "index_image_with_text_hra4gC": {
+      "type": "index__image-with-text",
+      "blocks": {
+        "text_C8ciUj": {
+          "type": "text",
+          "settings": {
+            "title": "We’re a family business!",
+            "heading_size": "regular",
+            "text": "<p>Just like you, we’re a family, and we love toys. We love the surprise and excitement that seeing a marionette can create in a child. We love hearing that our puppets have helped a therapist working with children. We just love the expressions on customers that walk into the store for the first me.</p><p>I’m a designer, and I have a passion for marionettes, timber toys, and durability. I’m also a parent, so I really understand that my customers want to be sure that our toys are safe for their kids.</p><p>We’re experts in puppets and toys, so ask any of us for help and ideas to guide your decisions. Learn more ...</p><p><strong>Dion Bright | Owner</strong></p><p></p>",
+            "alignment": "left",
+            "vertical_position": "center",
+            "button_label": "",
+            "link": "",
+            "button_style": "button--primary",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "mobile_title": "",
+            "mobile_heading_size": "same_as_desktop",
+            "mobile_text": "",
+            "mobile_alignment": "same_as_desktop"
+          }
+        },
+        "image_KxwLNz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GW_-_Family_Business_Tile_lo-res_and_temporary_01.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_C8ciUj",
+        "image_KxwLNz"
+      ],
+      "settings": {
+        "width": "standard",
+        "show_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "animation": "none",
+        "mobile_text_position": "same_as_desktop",
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "custom_liquid_gRpxTf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"container\" style=\"width: 100%;\">\n  <div style=\"display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 2rem; padding: 1rem 0;\">\n\n    <!-- Left side: Image + Text -->\n    <div style=\"flex: 1; display: flex; align-items: center; gap: 1rem;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0050/6449/1121/files/gepetto-trans_430x.png?v=1745381561\" alt=\"Logo\" style=\"max-height: 60px;\">\n      <p style=\"font-weight: bold; font-size: 1.25rem; margin: 0;\">Looking for Something?</p>\n    </div>\n\n    <!-- Right side: Search bar -->\n    <div style=\"flex: 1; display: flex; justify-content: flex-end;\">\n      <form class=\"search-form\" action=\"{{ routes.search_url }}\" style=\"width: 100%; max-width: 700px; position: relative;\">\n        <input\n          class=\"input\"\n          type=\"text\"\n          name=\"q\"\n          placeholder=\"{{ settings.search_placeholder }}\"\n          value=\"{{ search.terms }}\"\n          x-webkit-speech\n          autocapitalize=\"off\"\n          autocomplete=\"off\"\n          autocorrect=\"off\"\n          data-q\n          style=\"width: 100%; padding-right: 2.5rem;\" />\n\n        <button\n          type=\"submit\"\n          name=\"search\"\n          style=\"position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer;\">\n          {%\n            render 'icon',\n            name: 'search',\n            class: 'icon',\n          %}\n        </button>\n      </form>\n    </div>\n\n  </div>\n</div>"
       }
     }
   },
   "order": [
-    "16394170664118cf19",
+    "index_video_cPTgGt",
+    "grid_8Ya7Rq",
+    "index_collection_list_EwGAwM",
+    "1744594232c6b18388",
     "16394217267eadc0ee",
-    "1639421910fd42e587",
-    "featured_promotions",
-    "1639421646e22a9a5f",
-    "16394220705104f7f0"
+    "index_collection_list_83c9za",
+    "index_image_with_text_F3TeV9",
+    "index_heading_tCJAVc",
+    "index_collection_list_mf7zPW",
+    "index_heading_Lx3Ktg",
+    "index_logo_list_jFcywR",
+    "index_image_with_text_X6AqDh",
+    "custom_liquid_gRpxTf",
+    "index_featured_collection_tYzJQh",
+    "index_heading_xAQ9rX",
+    "16394220705104f7f0",
+    "grid_LVXjEQ",
+    "index_image_with_text_hra4gC"
   ]
 }

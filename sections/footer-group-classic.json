@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -9,28 +18,32 @@
           "type": "text",
           "settings": {
             "icon": "leaf",
-            "text": "100% Organic"
+            "text": "100% Organic",
+            "link": ""
           }
         },
         "text_2": {
           "type": "text",
           "settings": {
             "icon": "bunny",
-            "text": "Cruelty free"
+            "text": "Cruelty free",
+            "link": ""
           }
         },
         "text_3": {
           "type": "text",
           "settings": {
             "icon": "chat",
-            "text": "24/7 support"
+            "text": "24/7 support",
+            "link": ""
           }
         },
         "text_4": {
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping"
+            "text": "Free shipping",
+            "link": ""
           }
         }
       },
@@ -39,29 +52,85 @@
         "text_2",
         "text_3",
         "text_4"
-      ]
+      ],
+      "disabled": true,
+      "settings": {
+        "show_icon_bar": true,
+        "icon_position": "row",
+        "alignment": "center",
+        "mobile_alignment": "none",
+        "size": "medium",
+        "background": "#8B8B8B",
+        "link_color": "#ffffff",
+        "link_hover_color": "#000000",
+        "text_color": "#ffffff",
+        "width": "standard",
+        "css_class": "",
+        "custom_css": ""
+      }
     },
     "footer": {
       "type": "footer-classic",
       "blocks": {
         "logo": {
-          "type": "logo"
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/geppettos-workshop-logo-shield.png",
+            "size": "small",
+            "text": "",
+            "social_icons_footer": false
+          }
         },
         "link_list": {
           "type": "link_list",
           "settings": {
-            "menu": "main-menu"
+            "menu": "footer-menu-shop-online",
+            "social_icons_footer": false
           }
         },
-        "text": {
-          "type": "text"
+        "link_list_GdHVcm": {
+          "type": "link_list",
+          "settings": {
+            "menu": "footer-menu-quicklinks",
+            "social_icons_footer": false
+          }
+        },
+        "link_list_PwpE9A": {
+          "type": "link_list",
+          "settings": {
+            "menu": "footer-menu-policies",
+            "social_icons_footer": false
+          }
+        },
+        "newsletter_TCGYQP": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_title": "Sign up to Geppetto's Workshop News",
+            "newsletter_richtext": "",
+            "display_first_name": false,
+            "display_last_name": false
+          }
         }
       },
       "block_order": [
         "logo",
         "link_list",
-        "text"
-      ]
+        "link_list_GdHVcm",
+        "link_list_PwpE9A",
+        "newsletter_TCGYQP"
+      ],
+      "custom_css": [],
+      "settings": {
+        "copyright_text": "",
+        "display_designed_by": false,
+        "display_shopify": false,
+        "show_follow_on_shop": false,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "display_payment_methods": true,
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
@@ -26,28 +35,36 @@
           "type": "title",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {
             "display_savings": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "form": {
           "type": "form",
           "settings": {
-            "show_payment_button": true
+            "show_payment_button": true,
+            "show_gift_card_recipient_form": false
+          }
+        },
+        "text_a8yHxx": {
+          "type": "text",
+          "settings": {
+            "text": ""
           }
         }
       },
       "block_order": [
         "title",
-        "price",
         "description",
-        "form"
+        "price",
+        "form",
+        "text_a8yHxx"
       ],
       "settings": {
         "product_images_position": "left",
@@ -70,56 +87,6 @@
         "custom_css": ""
       }
     },
-    "16394226239621d7b1": {
-      "type": "apps",
-      "blocks": {
-        "e790e3af-287e-44a6-b863-e379a00d107d": {
-          "type": "shopify://apps/product-reviews/blocks/reviews/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "e790e3af-287e-44a6-b863-e379a00d107d"
-      ],
-      "settings": {
-        "width": "standard",
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "16394226415043583f": {
-      "type": "index__rich-text",
-      "settings": {
-        "title": "How We Give Back",
-        "heading_font": "mundo_sans_n5",
-        "heading_color": "rgba(0,0,0,0)",
-        "heading_alignment": "center",
-        "heading_size": 30,
-        "text": "<p>We believe in giving back; We are proud to give 1% of all orders directly to environmental not for profit groups whose focus is the protection, preservation and restoration of our planet. This means every time you purchase from us, 1% goes directly to an environmental cause.</p>",
-        "text_font": "mundo_sans_n4",
-        "text_color": "rgba(0,0,0,0)",
-        "text_alignment": "center",
-        "text_size": 16,
-        "columns": 1,
-        "button_label": "Read more",
-        "button_link": "shopify://pages/our-story",
-        "button_alignment": "center",
-        "button_style": "button--primary",
-        "background": "#EEEEEE",
-        "gradient": "rgba(0,0,0,0)",
-        "gradient_rotation": 180,
-        "width": "standard",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_left": 0,
-        "padding_right": 0,
-        "animation": "fadeIn",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
     "recommendations": {
       "type": "product__recommendations",
       "settings": {
@@ -134,6 +101,8 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "animation": "fadeIn",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
         "css_class": "",
         "custom_css": ""
       }
@@ -143,8 +112,6 @@
     "breadcrumbs",
     "sidebar",
     "main",
-    "16394226239621d7b1",
-    "16394226415043583f",
     "recommendations"
   ]
 }
